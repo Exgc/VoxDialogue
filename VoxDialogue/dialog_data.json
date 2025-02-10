@@ -1,0 +1,847 @@
+{
+    "Art and Creativity":{
+        "history_turns": [
+            "A (female, happy, normal, normal): I finally finished my painting!",
+            "B (male, surprised, normal, high): Wow, that's awesome! What's it about?",
+            "A (female, happy, normal, normal): It's a landscape of the mountains, inspired by our trip last year.",
+            "B (male, neutral, normal, normal): That sounds beautiful. Did you use oils or acrylics?",
+            "A (female, happy, fast, high): I used acrylics! They dry faster, and I love the texture.",
+            "B (male, neutral, normal, normal): I've always wanted to try painting. Do you think I could learn?"
+        ],
+        "current_turn": "A: Absolutely, anyone can learn to paint.",
+        "current_turn_style_1": "(female, happy, normal, normal)",
+        "current_turn_style_2": "(female, neutral, slow, low)",
+        "current_turn_style_3": "(female, happy, fast, high)",
+        "response_of_current_style_1": "B (male, happy, normal, normal): That's really encouraging to hear! Maybe you can give me some tips?",
+        "response_of_current_style_2": "B (male, neutral, slow, low): Thanks for saying that. I guess I could give it a try.",
+        "response_of_current_style_3": "B (male, happy, fast, high): That's awesome! I can't wait to start! Can you teach me?"
+    },
+    "War": {
+        "history_turns": [
+            "A (female, happy, normal, high): I'm glad we found a way to stay in touch.",
+            "B (male, neutral, normal, normal): Yeah, it's been tough with everything going on.",
+            "A (female, sad, slow, low): I know, the news about the war is really heartbreaking.",
+            "B (male, sad, slow, low): It's hard to believe this is happening in our lifetime."
+        ],
+        "current_turn": "A: We have to stay strong.",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, happy, fast, high)",
+        "current_turn_style_3": "(female, fearful, slow, low)",
+        "response_of_current_style_1": "B (male, neutral, normal, normal): Yes, we do. It's the only way we'll get through this.",
+        "response_of_current_style_2": "B (male, happy, fast, high): Absolutely, and we'll find a way to make it through!",
+        "response_of_current_style_3": "B (male, fearful, slow, low): I'm trying, but it's so overwhelming sometimes."
+    },
+    "Health and Fitness":{
+        "history_turns": [
+            "A (female, happy, fast, high): I've been working out every morning for the past month.",
+            "B (male, surprised, normal, normal): Wow, that's impressive! Do you feel a lot better?",
+            "A (female, happy, fast, high): Absolutely! I have so much more energy now.",
+            "B (male, neutral, normal, low): That's great to hear. What kind of workouts are you doing?"
+        ],
+        "current_turn": "A: Mostly cardio and some strength training.",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, happy, fast, high)",
+        "current_turn_style_3": "(female, neutral, slow, low)",
+        "response_of_current_style_1": "B (male, neutral, normal, normal): That sounds like a solid routine.",
+        "response_of_current_style_2": "B (male, happy, fast, high): Awesome! Keep it up!",
+        "response_of_current_style_3": "B (male, neutral, slow, low): Nice, seems well-rounded."
+    },
+    "Technology":{
+        "history turns": [
+            "A (male, happy, normal, high): I just got the new smartwatch!",
+            "B (female, surprised, fast, high): Really? How is it?",
+            "A (male, happy, normal, high): It's amazing, tracks everything.",
+            "B (female, happy, normal, normal): That sounds awesome! What features does it have?",
+            "A (male, neutral, normal, normal): It has heart rate monitoring, GPS, and even sleep tracking.",
+            "B (female, surprised, fast, normal): Wow, that's quite comprehensive.",
+            "A (male, happy, normal, high): Yeah, it's really helping me stay on top of my health.",
+            "B (female, neutral, slow, low): I might consider getting one too."
+        ], 
+        "current_turn": "A: You should, it's worth the investment.",
+        "current_turn_style_1": "(male, happy, normal, normal)",
+        "current_turn_style_2": "(male, neutral, normal, normal)",
+        "current_turn_style_3": "(male, happy, fast, high)",
+        "response_of_current_style_1": "B (female, neutral, slow, low): I'll have to do some research on it.",
+        "response_of_current_style_2": "B (female, neutral, normal, normal): Maybe I'll look into it.",
+        "response_of_current_style_3": "B (female, happy, fast, high): You've convinced me, I'll get one soon!"
+    },
+    "Study":{
+        "history turns": [
+            "A (female, happy, normal, normal): I can't believe we aced that test!",
+            "B (male, surprised, fast, high): I know, right? All that studying paid off!",
+            "A (female, neutral, normal, normal): Yeah, it feels good to see the results.",
+            "B (male, happy, normal, normal): Absolutely, we should celebrate this weekend.",
+            "A (female, happy, fast, high): That sounds like a great idea! Where do you want to go?",
+            "B (male, neutral, normal, normal): Maybe we could try that new cafe downtown?"
+        ],
+        "current_turn": "A: I'm up for it, as long as they have good coffee.",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, happy, fast, high)",
+        "current_turn_style_3": "(female, neutral, slow, low)",
+        "response_of_current_style_1": "B (male, neutral, normal, normal): I've heard their coffee is pretty good!",
+        "response_of_current_style_2": "B (male, happy, fast, high): Oh, they definitely do! You'll love it!",
+        "response_of_current_style_3": "B (male, neutral, slow, low): Yeah, I think their coffee is supposed to be really good."
+    },
+    "Movie":{
+        "history turns": [
+            "A (female, happy, normal, high): I just saw the new movie last night!",
+            "B (male, surprised, fast, high): Really? How was it?",
+            "A (female, neutral, normal, normal): It was pretty good, actually.",
+            "B (male, happy, normal, normal): That's great to hear!"
+        ],
+        "current_turn": "A: I think you should watch it too.",
+        "current_turn_style_1": "(female, happy, normal, high)",
+        "current_turn_style_2": "(female, neutral, normal, normal)",
+        "current_turn_style_3": "(female, sad, slow, low)",
+        "response_of_current_style_1": "B (male, happy, normal, high): Yeah, I might just do that!",
+        "response_of_current_style_2": "B (male, neutral, normal, normal): Maybe I will, thanks for the recommendation.",
+        "response_of_current_style_3": "B (male, sad, slow, low): I don't know if I'm in the mood for a movie right now."
+    },
+    "Natural Disasters":{
+        "history turns": [
+            "A (male, neutral, normal, normal): Did you hear about the earthquake last night?",
+            "B (female, surprised, fast, high): Yeah, it was so sudden! I couldn't believe it.",
+            "A (male, neutral, normal, normal): I know, it felt like the whole house was shaking.",
+            "B (female, fearful, slow, low): It was really terrifying, especially when the power went out."
+        ],
+        "current_turn": "A: How long do you think it will take to rebuild everything?",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, sad, slow, low)",
+        "current_turn_style_3": "(female, fearful, fast, high)",
+        "response_of_current_style_1": "B (male, neutral, normal, normal): It might take a few months, but they'll probably prioritize the most damaged areas first.",
+        "response_of_current_style_2": "B (male, sad, slow, low): It's hard to say, it could take a long time to get things back to normal.",
+        "response_of_current_style_3": "B (male, neutral, fast, normal): I'm not sure, but hopefully, they'll start working on it soon!"
+    },
+    "Disease":{
+        "history_turns": [
+            "A (male, sad, slow, low): I can't believe I got diagnosed with this disease.",
+            "B (female, surprised, normal, high): Oh no, when did you find out?",
+            "A (male, sad, slow, low): Just yesterday, and I'm still in shock.",
+            "B (female, sad, slow, low): That must be so hard for you."
+        ],
+        "current_turn": "A: I'm trying to stay positive though.",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, happy, fast, high)",
+        "current_turn_style_3": "(male, neutral, slow, low)",
+        "response_of_current_style_1": "B (female, neutral, normal, normal): That's the right attitude, just take it one day at a time.",
+        "response_of_current_style_2": "B (female, happy, fast, high): That's great to hear! Keep that positivity going!",
+        "response_of_current_style_3": "B (female, neutral, slow, low): Staying positive can make a big difference."
+    },
+    "Weather":{
+        "history turns": [
+            "A (female, happy, normal, high): Wow, the weather is amazing today!",
+            "B (male, surprised, normal, normal): I know, right? I wasn't expecting it to be this sunny.",
+            "A (female, neutral, normal, normal): Do you want to go for a walk later?",
+            "B (male, happy, fast, high): Sure, that sounds like a great idea!"
+        ],
+        "current_turn": "A: Let's head out in an hour.",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, happy, fast, high)",
+        "current_turn_style_3": "(female, sad, slow, low)",
+        "response_of_current_style_1": "B (male, neutral, normal, normal): Sounds good, I'll be ready.",
+        "response_of_current_style_2": "B (male, happy, fast, high): Perfect! Can't wait!",
+        "response_of_current_style_3": "B (male, sad, slow, low): Alright, I'll get ready."},
+    "Crime and Violence":{
+        "history turns": [
+            "A (female, sad, slow, low): It's heartbreaking to see so much crime in our neighborhood.",
+            "B (male, neutral, normal, normal): Yeah, it's really getting out of hand.",
+            "A (female, angry, fast, high): We need more police patrols to keep us safe!",
+            "B (male, surprised, normal, high): Do you really think that would solve the problem?",
+            "A (female, disgusted, fast, normal): Absolutely, it would at least be a deterrent.",
+            "B (male, neutral, slow, low): I don't know, there might be deeper issues at play."
+        ],
+        "current_turn": "A: What do you think causes this rise in crime?",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, sad, slow, low)",
+        "current_turn_style_3": "(female, neutral, fast, high)",
+        "response_of_current_style_1": "B (male, angry, normal, normal): Maybe it's the economic situation and lack of opportunities.",
+        "response_of_current_style_2": "B (male, sad, slow, low): It's hard to say, but poverty and desperation could be major factors.",
+        "response_of_current_style_3": "B (male, neutral, fast, high): There are many reasons, but unemployment and poor education might be big ones."
+    },
+    "Discrimination":{
+        "history turns": [
+        "A (female, angry, fast, high): I can't believe they treated you like that at work!",
+        "B (male, sad, slow, low): It's been really tough to deal with.",
+        "A (female, neutral, normal, normal): I'm so sorry you're going through this.",
+        "B (male, neutral, normal, low): Thanks for understanding."
+        ],
+        "current_turn": "A: Have you thought about talking to HR?",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, sad, slow, normal)",
+        "current_turn_style_3": "(female, surprised, fast, high)",
+        "response_of_current_style_1": "B (male, sad, normal, low): Yeah, but I'm worried it won't change anything.",
+        "response_of_current_style_2": "B (male, sad, slow, low): I have, but I'm not sure if it will help.",
+        "response_of_current_style_3": "B (male, surprised, fast, normal): I did, but I'm afraid it might not work out."
+    },
+    "Cultural diversity":{
+        "history turns": [
+        "A (female, happy, normal, normal): I love how cultural diversity brings so many unique perspectives together!",
+        "B (male, neutral, normal, normal): Absolutely, it makes our experiences so much richer.",
+        "A (female, surprised, fast, high): Did you know that there are over 6,000 languages spoken in the world?",
+        "B (male, happy, normal, normal): Wow, that's incredible! It's amazing how language shapes our worldview."
+        ],
+        "current_turn": "A: We should definitely learn more about different cultures.",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, happy, fast, high)",
+        "current_turn_style_3": "(female, sad, slow, low)",
+        "response_of_current_style_1": "B (male, neutral, normal, normal): Yeah, it would really broaden our horizons.",
+        "response_of_current_style_2": "B (male, happy, fast, high): Yes, let's start with something fun like cooking traditional dishes!",
+        "response_of_current_style_3": "B (male, neutral, slow, low): That sounds like a meaningful way to appreciate our differences."
+    },
+    "Electric vehicles":{
+        "history turns": [
+            "A (male, neutral, normal, normal): Have you ever driven an electric car before?",
+            "B (female, happy, normal, high): Yeah, I actually own one. It's been a great experience so far.",
+            "A (male, surprised, fast, high): Really? Which model do you have?",
+            "B (female, neutral, normal, normal): I have a Tesla Model 3."
+        ],
+        "current_turn": "A: What do you like the most about it?",
+        "current_turn_style_1": "(male, happy, normal, normal)",
+        "current_turn_style_2": "(male, neutral, slow, low)",
+        "current_turn_style_3": "(male, surprised, fast, high)",
+        "response_of_current_style_1": "B (female, happy, normal, high): The smooth drive and the minimal maintenance are definitely my favorite parts.",
+        "response_of_current_style_2": "B (female, neutral, slow, low): I really appreciate the smooth drive and how little maintenance it needs.",
+        "response_of_current_style_3": "B (female, happy, fast, high): Oh, definitely the smooth drive and the fact that it hardly needs any maintenance!"
+    },
+    "Space exploration":{
+        "history turns": [
+            "A (female, happy, normal, high): I can't believe we are actually planning a trip to Mars!",
+            "B (male, surprised, fast, normal): It's like a dream come true, isn't it?",
+            "A (female, happy, normal, high): Absolutely! I've always wanted to be an astronaut.",
+            "B (male, neutral, normal, normal): There's so much to prepare though."
+        ],
+        "current_turn": "A: Yeah, but it will be worth it.",
+        "current_turn_style_1": "(female, happy, normal, high)",
+        "current_turn_style_2": "(female, neutral, normal, normal)",
+        "current_turn_style_3": "(female, sad, slow, low)",
+        "response_of_current_style_1": "B (male, happy, fast, high): Totally! It's going to be the adventure of a lifetime.",
+        "response_of_current_style_2": "B (male, neutral, normal, normal): Definitely, it's a huge opportunity.",
+        "response_of_current_style_3": "B (male, sad, slow, low): I guess so, but it's going to be really tough."
+    },
+    "Artificial intelligence":{
+        "history turns": [
+            "A (female, happy, normal, high): I just read this amazing article about the latest AI developments!",
+            "B (male, neutral, normal, low): Oh, what did you find most interesting about it?",
+            "A (female, surprised, fast, high): The way AI is now able to create art is just mind-blowing!",
+            "B (male, happy, normal, normal): Yeah, I saw some AI-generated paintings that were really impressive."
+        ],
+        "current_turn": "A: AI is changing so many fields, not just art.",
+        "current_turn_style_1": "(male, happy, normal, normal)",
+        "current_turn_style_2": "(male, neutral, slow, low)",
+        "current_turn_style_3": "(male, surprised, fast, high)",
+        "response_of_current_style_1": "B (female, happy, fast, high): Totally! It's revolutionizing everything from healthcare to finance.",
+        "response_of_current_style_2": "B (female, neutral, normal, low): Yes, it's impacting a lot of different areas.",
+        "response_of_current_style_3": "B (female, surprised, fast, high): I know, right? It's everywhere now!"
+    },
+    "The future of work":{
+        "history turns": [
+            "A (male, happy, normal, normal): I'm really excited about the future of work!",
+            "B (female, surprised, normal, high): Yeah, it's amazing how things are evolving so quickly.",
+            "A (male, neutral, normal, normal): Definitely. Remote work has become the new norm.",
+            "B (female, happy, fast, high): And technology keeps getting better and better!"
+        ],
+        "current_turn": "A: It's fascinating to think about how AI will change our jobs.",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, happy, fast, high)",
+        "current_turn_style_3": "(male, neutral, slow, low)",
+        "response_of_current_style_1": "B (female, neutral, normal, normal): Yeah, AI is definitely going to redefine many roles.",
+        "response_of_current_style_2": "B (female, happy, fast, high): Absolutely, the possibilities are endless!",
+        "response_of_current_style_3": "B (female, neutral, slow, low): It really makes you wonder what jobs will look like in a few years."
+    },
+    "Robotics":{
+        "history_turns": [
+            "A (male, happy, normal, normal): Hey, did you see the new robotics project unveiled yesterday?",
+            "B (female, surprised, fast, high): Yes, I did! It's amazing how far technology has come.",
+            "A (male, neutral, normal, normal): Absolutely, the advancements are really impressive.",
+            "B (female, happy, normal, normal): I'm particularly excited about the new AI integration they showcased."
+        ],
+        "current_turn": "A: What do you think about the robot's ability to learn from its environment?",
+        "current_turn_style_1": "(male, surprised, normal, normal)",
+        "current_turn_style_2": "(male, neutral, normal, normal)",
+        "current_turn_style_3": "(male, sad, slow, low)",
+        "response_of_current_style_1": "B (female, happy, fast, high): I think it's a game-changer! Imagine the possibilities.",
+        "response_of_current_style_2": "B (female, neutral, normal, normal): It's an interesting development, definitely worth keeping an eye on.",
+        "response_of_current_style_3": "B (female, sad, slow, low): It's quite intriguing. It could lead to some significant breakthroughs."
+    },
+    "Smart home technology":{
+        "history turns": [
+            "A (female, happy, normal, high): I just got a new smart thermostat!",
+            "B (male, surprised, fast, normal): That's awesome! How does it work?",
+            "A (female, neutral, normal, normal): It lets me control the temperature from my phone.",
+            "B (male, happy, normal, normal): That sounds super convenient!"
+        ],
+        "current_turn": "A: You can even set schedules for it to adjust automatically.",
+        "current_turn_style_1": "(female, happy, fast, high)",
+        "current_turn_style_2": "(female, neutral, normal, normal)",
+        "current_turn_style_3": "(female, neutral, slow, low)",
+        "response_of_current_style_1": "B (male, surprised, fast, high): Wow, that's so cool! What else can it do?",
+        "response_of_current_style_2": "B (male, neutral, normal, normal): That's pretty neat. Does it have any other features?",
+        "response_of_current_style_3": "B (male, neutral, slow, low): Interesting. I wonder if I should get one too."
+    },
+    "Trip":{
+        "history turns": [
+            "A (male, happy, normal, normal): I can't believe we finally booked our trip to Japan!",
+            "B (female, surprised, fast, high): I know, right? It's going to be so much fun!",
+            "A (male, neutral, normal, normal): I've been wanting to visit Tokyo for ages.",
+            "B (female, happy, fast, normal): Me too! The food, the culture, everything is going to be amazing!"
+        ],
+        "current_turn": "A: Have you started packing yet?",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, surprised, fast, high)",
+        "current_turn_style_3": "(male, neutral, slow, low)",
+        "response_of_current_style_1": "B (female, neutral, normal, normal): Not yet, but I have a list ready.",
+        "response_of_current_style_2": "B (female, surprised, fast, high): Not yet, but I have a list ready!",
+        "response_of_current_style_3": "B (female, neutral, slow, low): Not yet, but I have a list ready."
+    },
+    "Happy moment":{
+        "history turns": [
+            "A (female, happy, normal, normal): Guess what? I got the promotion!",
+            "B (male, surprised, fast, high): No way! That's amazing news!",
+            "A (female, happy, fast, high): I know, right? I'm so excited!",
+            "B (male, happy, normal, normal): We should celebrate!",
+            "A (female, happy, normal, normal): Definitely! How about dinner tonight?",
+            "B (male, neutral, normal, normal): Sounds perfect. Where do you want to go?"
+        ],
+        "current_turn": "A: I was thinking about that new Italian place downtown.",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, happy, fast, high)",
+        "current_turn_style_3": "(female, neutral, slow, low)",
+        "response_of_current_style_1": "B (male, neutral, normal, normal): That sounds good to me.",
+        "response_of_current_style_2": "B (male, happy, fast, high): Awesome! I've heard great things about it!",
+        "response_of_current_style_3": "B (male, neutral, slow, low): Yeah, that could be nice."
+    },
+    "Environmental issues":{
+        "history turns": [
+            "A (female, neutral, normal, normal): Have you heard about the new recycling program in our city?",
+            "B (male, surprised, normal, high): Oh, really? I hadn't heard anything about it.",
+            "A (female, happy, normal, normal): Yeah, it's great! They're introducing separate bins for different types of recyclables.",
+            "B (male, neutral, normal, normal): That sounds interesting. How does it work exactly?"
+        ],
+        "current_turn": "A: It's pretty straightforward.",
+        "current_turn_style_1": "(female, happy, fast, high)",
+        "current_turn_style_2": "(female, neutral, normal, normal)",
+        "current_turn_style_3": "(female, sad, slow, low)",
+        "response_of_current_style_1": "B (male, happy, fast, high): Awesome! Can't wait to give it a try and do my part for the environment!",
+        "response_of_current_style_2": "B (male, neutral, normal, normal): I see. Could you give me some more details about the different categories?",
+        "response_of_current_style_3": "B (male, sad, normal, low): Is it really? I hope it's not too complicated for everyone to follow."
+    },
+    "Broken relationship":{
+        "history_turns": [
+            "A (female, sad, slow, low): I can't believe this is happening to us.",
+            "B (male, neutral, normal, normal): It's been coming for a while, hasn't it?",
+            "A (female, angry, fast, high): I never thought it would end like this.",
+            "B (male, sad, slow, low): Neither did I, but here we are."
+        ],
+        "current_turn": "A: What are we supposed to do now?",
+        "current_turn_style_1": "(female, sad, slow, low)",
+        "current_turn_style_2": "(female, neutral, normal, normal)",
+        "current_turn_style_3": "(female, angry, fast, high)",
+        "response_of_current_style_1": "B (male, sad, slow, low): I don't know, maybe we need time to figure things out.",
+        "response_of_current_style_2": "B (male, neutral, normal, normal): I guess we should try to talk things through and see if there's a way forward.",
+        "response_of_current_style_3": "B (male, angry, fast, high): Maybe we should just take a break and see how we feel later."
+    },
+    "Historical tragedies":{
+        "history turns": [
+            "A (male, neutral, normal, normal): I was reading about the Black Death yesterday.",
+            "B (female, surprised, fast, high): Really? That must've been intense!",
+            "A (male, sad, slow, low): Yeah, it was devastating to learn about how many people suffered.",
+            "B (female, sad, normal, normal): It's heartbreaking to think about the impact on those communities."
+        ],
+        "current_turn": "A: It's hard to imagine living through something like that.",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, sad, slow, low)",
+        "current_turn_style_3": "(female, surprised, fast, high)",
+        "response_of_current_style_1": "B (male, neutral, normal, normal): Absolutely, it's beyond comprehension.",
+        "response_of_current_style_2": "B (male, sad, slow, low): It really is, I can't fathom the sorrow they endured.",
+        "response_of_current_style_3": "B (male, surprised, fast, high): Yeah, it must've been unimaginable!"
+    },
+    "Serious illness":{
+        "history turns": [
+            "A (female, sad, slow, low): I just received a call from my doctor about my recent tests.",
+            "B (male, neutral, normal, normal): What did the doctor say about your results?",
+            "A (female, fearful, fast, high): They found some abnormalities and want me to come in for more tests.",
+            "B (male, surprised, normal, high): That's unexpected. Did they give you any more details?",
+            "A (female, sad, slow, low): Not really, just that they need to investigate further.",
+            "B (male, neutral, normal, normal): I see. When is your follow-up appointment?"
+        ],
+        "current_turn": "A: It's scheduled for next week, but the waiting is killing me.",
+        "current_turn_style_1": "(female, fearful, fast, high)",
+        "current_turn_style_2": "(female, neutral, normal, normal)",
+        "current_turn_style_3": "(female, sad, slow, low)",
+        "response_of_current_style_1": "B (male, surprised, fast, normal): Next week? That's sooner than I expected. We'll get through this.",
+        "response_of_current_style_2": "B (male, neutral, normal, normal): I understand. A week can feel long in these situations. Let's find ways to keep you occupied.",
+        "response_of_current_style_3": "B (male, sad, slow, low): This uncertainty must be so hard for you. I'm here if you need to talk."
+    },
+    "Impact of unemployment":{
+        "history turns": [
+            "A (female, neutral, normal, normal): Have you seen the latest unemployment figures?",
+            "B (male, surprised, normal, high): Wow, I didn't realize they had gotten so high!",
+            "A (female, sad, slow, low): It's really disheartening to see so many people out of work.",
+            "B (male, angry, fast, high): The government should be doing more to create jobs!",
+            "A (female, fearful, normal, high): I'm worried about how this might affect our city's crime rate.",
+            "B (male, neutral, normal, normal): That's a valid concern, we should look into local initiatives."
+        ],
+        "current_turn": "A: How do you think high unemployment will impact future generations?",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, fearful, fast, high)",
+        "current_turn_style_3": "(female, sad, slow, low)",
+        "response_of_current_style_1": "B (male, neutral, normal, normal): It could lead to significant changes in education and career paths.",
+        "response_of_current_style_2": "B (male, fearful, fast, high): They might face a job market that's completely unstable and unpredictable!",
+        "response_of_current_style_3": "B (male, sad, slow, low): It's heartbreaking to think they might struggle more than we did."
+    },
+    "Unexpected career opportunities":{
+        "history turns": [
+            "A (male, happy, fast, high): You won't believe what happened at work today!",
+            "B (female, surprised, normal, high): What happened? Did you get a promotion?",
+            "A (male, neutral, normal, normal): Not exactly, but I got offered a new project overseas.",
+            "B (female, happy, fast, high): Wow, that's amazing! Are you going to take it?"
+        ],
+        "current_turn": "A: I'm not sure yet, it's a big decision.",
+        "current_turn_style_1": "(male, neutral, slow, low)",
+        "current_turn_style_2": "(male, neutral, normal, normal)",
+        "current_turn_style_3": "(male, fearful, fast, high)",
+        "response_of_current_style_1": "B (female, neutral, slow, low): Yeah, it is. Take your time to think about it.",
+        "response_of_current_style_2": "B (female, neutral, normal, normal): I get that. It's definitely a lot to consider.",
+        "response_of_current_style_3": "B (female, fearful, fast, high): I can see why you'd be unsure. It's a huge move!"
+    },
+    "Scams and fraud":{
+        "history turns": [
+            "A (female, neutral, normal, normal): Did you see the news about that online shopping scam?",
+            "B (male, surprised, fast, normal): No, I didn't! What happened?",
+            "A (female, sad, normal, low): People are losing money on fake websites that look like real stores.",
+            "B (male, angry, fast, high): That's infuriating! How can they get away with this?",
+            "A (female, fearful, normal, normal): I'm worried about my parents. They're not very tech-savvy.",
+            "B (male, disgusted, slow, low): These scammers are the worst. Targeting vulnerable people like that."
+        ],
+        "current_turn": "A: We should teach our family members how to spot these scams.",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, happy, fast, high)",
+        "current_turn_style_3": "(female, fearful, slow, low)",
+        "response_of_current_style_1": "B (male, neutral, normal, normal): That's a good idea. Maybe we could find some online resources to share with them.",
+        "response_of_current_style_2": "B (male, happy, fast, high): Absolutely! We could make it fun, like a family game night about internet safety!",
+        "response_of_current_style_3": "B (male, fearful, slow, low): You're right... I'm scared to think what could happen if we don't. Let's do it soon."
+    },
+    "Animal cruelty":{
+        "history turns": [
+            "A (female, angry, fast, high): I can't believe people still support animal testing!",
+            "B (male, neutral, normal, normal): Yeah, it's really upsetting.",
+            "A (female, sad, slow, low): Those poor animals suffer so much.",
+            "B (male, surprised, fast, high): And it's not even necessary most of the time!"
+        ],
+        "current_turn": "A: We should do something about it.",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, happy, fast, high)",
+        "current_turn_style_3": "(male, sad, slow, low)",
+        "response_of_current_style_1": "B (female, neutral, normal, normal): Absolutely, we need to raise awareness.",
+        "response_of_current_style_2": "B (female, happy, fast, high): Yes, let's start a campaign or something!",
+        "response_of_current_style_3": "B (female, sad, slow, low): I agree, but it's so hard to make a difference."
+    },
+    "Corruption in Politics":{
+        "history turns": [
+            "A (male, angry, fast, high): Have you seen the news about the corruption in our city council?",
+            "B (female, surprised, normal, high): No, I haven't! What's going on now?",
+            "A (male, disgusted, normal, normal): They caught a council member accepting kickbacks from real estate developers.",
+            "B (female, angry, fast, high): That's infuriating! How can they betray public trust like that?",
+            "A (male, sad, slow, low): It's heartbreaking to see our local government crumbling like this.",
+            "B (female, fearful, normal, normal): I'm worried about what this means for our community's future.",
+            "A (male, neutral, normal, normal): We need to push for more transparency in local politics.",
+            "B (female, angry, normal, high): Absolutely. We can't let them get away with this anymore."
+        ],
+        "current_turn": "A: What if we start a petition for stricter anti-corruption measures?",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, happy, fast, high)",
+        "current_turn_style_3": "(male, fearful, slow, low)",
+        "response_of_current_style_1": "B (female, neutral, normal, normal): That's a reasonable approach. We should research effective petition strategies first.",
+        "response_of_current_style_2": "B (female, happy, fast, high): Great idea! I'm thrilled you're taking initiative. Let's start gathering signatures right away!",
+        "response_of_current_style_3": "B (female, surprised, normal, high): A petition? I'm shocked you'd suggest that. Are you sure it won't make things worse for us?"
+    },
+    "Government Corruption":{
+        "history turns": [
+            "A (male, angry, fast, high): Have you seen the news about the mayor's embezzlement scandal?",
+            "B (female, surprised, normal, high): What? No, I haven't! What happened?",
+            "A (male, disgusted, normal, normal): Apparently, he's been siphoning funds from the city's education budget.",
+            "B (female, angry, fast, high): That's outrageous! How could he do that to our children?",
+            "A (male, sad, slow, low): I know. It's heartbreaking to see how corruption affects the most vulnerable.",
+            "B (female, fearful, normal, normal): Do you think this will impact the upcoming elections?",
+            "A (male, neutral, normal, normal): It's hard to say, but it'll definitely shake things up.",
+            "B (female, disgusted, normal, low): Politicians these days... Can we even trust anyone anymore?"
+        ],
+        "current_turn": "A: I think we need to demand more transparency in local government.",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, angry, fast, high)",
+        "current_turn_style_3": "(male, sad, slow, low)",
+        "response_of_current_style_1": "B (female, neutral, normal, normal): You're right, maybe we should attend the next town hall meeting.",
+        "response_of_current_style_2": "B (female, angry, fast, high): Absolutely! Let's organize a protest and make our voices heard!",
+        "response_of_current_style_3": "B (female, sad, slow, low): I agree, but I'm worried it won't make any difference in the long run."
+    },
+    "Labor Exploitation":{
+        "history turns": [
+            "A (female, angry, fast, high): How can these big corporations exploit workers like this?",
+            "B (male, surprised, normal, normal): I had no idea the situation was so dire in some industries!",
+            "A (female, disgusted, normal, high): It's revolting how they prioritize profits over human dignity!",
+            "B (male, sad, slow, low): Those poor workers, trapped in such terrible conditions...",
+            "A (female, angry, fast, high): We need tougher laws and better enforcement now!",
+            "B (male, fearful, normal, normal): But what if stricter regulations cause job losses in poor countries?",
+            "A (female, angry, normal, high): That's just an excuse to keep exploiting vulnerable people!",
+            "B (male, sad, slow, low): There must be a way to protect workers without harming economies."
+        ],
+        "current_turn": "A: Have you heard about the recent exposé on child labor in the fashion industry?",
+        "current_turn_style_1": "(female, surprised, fast, high)",
+        "current_turn_style_2": "(female, disgusted, normal, normal)",
+        "current_turn_style_3": "(female, fearful, slow, low)",
+        "response_of_current_style_1": "B (male, surprised, fast, high): What? No, I haven't! That's absolutely shocking!",
+        "response_of_current_style_2": "B (male, angry, normal, normal): Ugh, it's sickening how these companies exploit children for profit.",
+        "response_of_current_style_3": "B (male, sad, slow, low): Oh no, I'm afraid to even hear the details. It's just so wrong."
+    },
+    "Healthcare Inequality":{
+        "history turns": [
+            "A (female, neutral, normal, normal): Have you heard about the recent report on healthcare disparities?",
+            "B (male, surprised, normal, high): No, I haven't. What did it say?",
+            "A (female, angry, normal, low): It showed significant gaps in access to quality healthcare based on income and location.",
+            "B (male, angry, fast, normal): That's unacceptable! Everyone deserves proper medical care.",
+            "A (female, sad, slow, low): I know. It's heartbreaking to think about people suffering due to lack of resources.",
+            "B (male, neutral, normal, high): We need to raise awareness about this issue. It's not getting enough attention.",
+            "A (female, surprised, normal, normal): You're right. Maybe we could volunteer at a local clinic to help out?",
+            "B (male, surprised, fast, high): That's a great idea! Let's look into opportunities this weekend."
+        ],
+        "current_turn": "A: What do you think is the root cause of healthcare inequality?",
+        "current_turn_style_1": "(female, neutral, slow, low)",
+        "current_turn_style_2": "(female, angry, normal, high)",
+        "current_turn_style_3": "(female, sad, fast, normal)",
+        "response_of_current_style_1": "B (male, neutral, slow, normal): I believe it's a complex issue, but poverty plays a huge role in limiting access.",
+        "response_of_current_style_2": "B (male, surprised, normal, high): That's an interesting question! I'd say it's a mix of systemic issues and economic factors.",
+        "response_of_current_style_3": "B (male, angry, fast, high): It's clearly the result of a broken system that prioritizes profit over people's wellbeing!"
+    },
+    "Climate Change":{
+        "history turns": [
+            "A (female, neutral, normal, normal): Have you seen the latest report on climate change?",
+            "B (male, neutral, normal, normal): Yeah, it's pretty alarming.",
+            "A (female, surprised, fast, high): I can't believe how fast the ice caps are melting!",
+            "B (male, sad, slow, low): It's really heartbreaking to see those images.",
+            "A (female, angry, normal, high): We need more aggressive policies to combat this.",
+            "B (male, angry, normal, normal): Absolutely, the current measures are nowhere near enough.",
+            "A (female, happy, fast, high): But there are some positive steps being taken, like renewable energy projects.",
+            "B (male, happy, normal, normal): Yes, those are definitely encouraging."
+        ],
+        "current_turn": "A: It's hard to stay optimistic sometimes.",
+        "current_turn_style_1": "(female, sad, normal, low)",
+        "current_turn_style_2": "(female, neutral, slow, normal)",
+        "current_turn_style_3": "(female, surprised, fast, high)",
+        "response_of_current_style_1": "B (male, sad, normal, low): I know, it feels overwhelming.",
+        "response_of_current_style_2": "B (male, neutral, slow, normal): Yeah, it's tough to keep a positive outlook.",
+        "response_of_current_style_3": "B (male, surprised, fast, high): Really? I thought you were always so hopeful!"
+    },
+    "Unhygienic Practices":{
+        "history_turns": [
+            "A (female, disgusted, fast, high): I can't believe he left the kitchen like that.",
+            "B (male, neutral, normal, low): Yeah, it was pretty bad.",
+            "A (female, angry, fast, high): There were dirty dishes everywhere!",
+            "B (male, neutral, normal, low): He really needs to clean up after himself.",
+            "A (female, disgusted, fast, high): And the trash was overflowing!",
+            "B (male, neutral, normal, low): It's not just about cleanliness, it's about respect for shared spaces.",
+            "A (female, angry, fast, high): Exactly! It's so frustrating!",
+            "B (male, neutral, normal, low): Maybe we should talk to him directly about this."
+        ],
+        "current_turn": "A: It's not just his mess, you know.",
+        "current_turn_style_1": "(female, disgusted, fast, high)",
+        "current_turn_style_2": "(female, neutral, normal, normal)",
+        "current_turn_style_3": "(female, sad, slow, low)",
+        "response_of_current_style_1": "B (male, disgusted, fast, high): Yeah, it's affecting all of us!",
+        "response_of_current_style_2": "B (male, neutral, normal, low): I get that, it's becoming a bigger issue.",
+        "response_of_current_style_3": "B (male, sad, slow, low): I know, it's really bringing down the vibe here."
+    },
+    "Disrespectful Behavior":{
+        "history turns": [
+            "A (male, angry, fast, high): I can't believe he said that to you!",
+            "B (female, sad, slow, low): Yeah, it really hurt my feelings.",
+            "A (male, neutral, normal, normal): People can be so thoughtless sometimes.",
+            "B (female, neutral, normal, normal): I know, but it still stings.",
+            "A (male, happy, fast, high): Hey, let's do something fun to take your mind off it!",
+            "B (female, happy, fast, high): That sounds like a great idea.",
+            "A (male, happy, normal, normal): How about going to that new cafe?",
+            "B (female, happy, normal, normal): Sure, I heard they have amazing desserts."
+        ],
+        "current_turn": "A: I'll drive us there.",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, happy, fast, high)",
+        "current_turn_style_3": "(male, neutral, slow, low)",
+        "response_of_current_style_1": "B (female, neutral, normal, normal): Thanks, I appreciate it.",
+        "response_of_current_style_2": "B (female, happy, fast, high): Awesome, let's go!",
+        "response_of_current_style_3": "B (female, neutral, slow, low): That would be great, thanks."
+    },
+    "Food Contamination":{
+        "history_turns": [ 
+            "A (female, angry, fast, high): How could they let this happen?", 
+            "B (male, disgusted, normal, low): It's unacceptable, really.", 
+            "A (female, disgusted, normal, normal): We trusted that place for years.", 
+            "B (male, sad, slow, low): I know, it's a real letdown.",
+            "A (female, sad, slow, high): I don't even know where to get safe food anymore.", 
+            "B (male, neutral, normal, normal): We might have to start cooking at home more often.", 
+            "A (female, neutral, normal, normal): That's probably a good idea.", 
+            "B (male, neutral, normal, normal): At least we can control the ingredients that way."
+        ],
+        "current_turn": "A: But it's so time-consuming.",
+        "current_turn_style_1": "(female, neutral, normal, normal)",
+        "current_turn_style_2": "(female, surprised, fast, high)",
+        "current_turn_style_3": "(female, sad, slow, low)",
+        "response_of_current_style_1": "B (male, neutral, normal, normal): Yeah, it definitely takes more effort.",
+        "response_of_current_style_2": "B (male, surprised, fast, high): I know, right? It takes up so much time!",
+        "response_of_current_style_3": "B (male, sad, slow, low): I get it, it's really a lot to handle."
+    },
+    "Horror Stories":{
+        "history turns": [
+            "A (male, neutral, normal, normal): I heard there's a haunted house at the end of the street.",
+            "B (female, surprised, fast, high): Really? Have you been inside?",
+            "A (male, happy, normal, normal): Not yet, but I'm planning to go this weekend.",
+            "B (female, fearful, slow, low): That sounds terrifying. Are you sure it's safe?",
+            "A (male, neutral, normal, normal): Well, that's part of the thrill, isn't it?",
+            "B (female, disgusted, normal, low): I hate creepy places. They give me the chills.",
+            "A (male, happy, fast, high): Come on, it'll be fun! We'll go together.",
+            "B (female, neutral, normal, normal): Okay, but only if you promise to stay close."
+        ],
+        "current_turn": "A: I heard they found something really strange in there.",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, surprised, fast, high)",
+        "current_turn_style_3": "(male, fearful, slow, low)",
+        "response_of_current_style_1": "B (female, curious, normal, normal): What did they find?",
+        "response_of_current_style_2": "B (female, surprised, fast, high): Oh my gosh, what was it?",
+        "response_of_current_style_3": "B (female, fearful, slow, low): Do you know what it was?"
+    },
+    "Fear of the Unknown":{
+        "history turns": [
+            "A (female, fearful, fast, high): I heard some strange noises last night.",
+            "B (male, neutral, normal, low): Oh really? What did they sound like?",
+            "A (female, fearful, fast, high): Like footsteps, but there was no one there.",
+            "B (male, neutral, normal, low): That sounds quite creepy.",
+            "A (female, fearful, fast, high): I know, right? I couldn't sleep after that.",
+            "B (male, neutral, normal, low): Maybe it was just the wind.",
+            "A (female, fearful, fast, high): I wish it was, but it felt so real.",
+            "B (male, neutral, normal, low): Have you checked with your neighbors?"
+        ],
+        "current_turn": "A: No, I haven't talked to them yet.",
+        "current_turn_style_1": "(female, fearful, fast, high)",
+        "current_turn_style_2": "(female, neutral, normal, normal)",
+        "current_turn_style_3": "(female, sad, slow, low)",
+        "response_of_current_style_1": "B (male, neutral, normal, low): Maybe you should. It might help ease your mind.",
+        "response_of_current_style_2": "B (male, neutral, normal, low): It could be a good idea to ask them.",
+        "response_of_current_style_3": "B (male, neutral, normal, low): Talking to them might make you feel better."
+    },
+    "Celebrity News":{
+        "history turns": [
+            "A (female, happy, fast, high): Did you hear about the latest news on that celebrity?",
+            "B (male, neutral, normal, low): Which one are you talking about?",
+            "A (female, happy, fast, high): The one who just got engaged!",
+            "B (male, surprised, normal, normal): Oh wow, I didn't know that!",
+            "A (female, happy, fast, high): Yeah, it was all over the internet yesterday!",
+            "B (male, neutral, normal, low): That's quite something. Who's the lucky person?",
+            "A (female, happy, fast, high): It's someone from the music industry.",
+            "B (male, surprised, normal, normal): Really? Who exactly?"
+        ],
+        "current_turn": "A: It's actually Taylor Swift!",
+        "current_turn_style_1": "(female, happy, fast, high)",
+        "current_turn_style_2": "(female, neutral, normal, normal)",
+        "current_turn_style_3": "(female, surprised, fast, high)",
+        "response_of_current_style_1": "B (male, surprised, normal, normal): No way, that's huge news!",
+        "response_of_current_style_2": "B (male, neutral, normal, low): Oh, that's interesting.",
+        "response_of_current_style_3": "B (male, surprised, fast, high): Seriously? I didn't see that coming!"
+    },
+    "Surprising Facts":{
+        "history turns": [
+            "A (male, happy, normal, high): Did you know that honey never spoils?",
+            "B (female, surprised, normal, normal): Really? That's amazing!",
+            "A (male, neutral, normal, normal): Yeah, archaeologists found pots of honey in ancient Egyptian tombs that are over 3000 years old and still perfectly edible.",
+            "B (female, neutral, normal, normal): Wow, I had no idea. What other surprising facts do you know?",
+            "A (male, happy, normal, low): Well, did you know that a day on Venus is longer than a year on Venus?",
+            "B (female, neutral, normal, high): No way! That's so weird!",
+            "A (male, surprised, fast, high): I know, right? It's because Venus rotates very slowly on its axis, while it orbits the Sun much faster.",
+            "B (female, neutral, normal, normal): That's really interesting. Tell me more."
+        ],
+        "current_turn": "A: Did you know that sharks have been around longer than trees?",
+        "current_turn_style_1": "(male, happy, fast, high)",
+        "current_turn_style_2": "(male, neutral, normal, normal)",
+        "current_turn_style_3": "(male, surprised, normal, high)",
+        "response_of_current_style_1": "B (female, happy, fast, high): No way, that's incredible! How is that possible?",
+        "response_of_current_style_2": "B (female, neutral, normal, normal): Oh, really? That's pretty cool.",
+        "response_of_current_style_3": "B (female, surprised, normal, high): Seriously? I had no idea! Tell me more about that."
+    },
+    "Basketball":{
+        "history_turns": [
+            "A (male, happy, fast, high): Did you see the game last night?",
+            "B (female, surprised, normal, normal): Yeah, it was incredible! That last-minute shot was insane.",
+            "A (male, neutral, normal, normal): I know, right? I couldn't believe my eyes.",
+            "B (female, happy, fast, high): I was on the edge of my seat!",
+            "A (male, happy, fast, high): Same here! Who was your favorite player?",
+            "B (female, neutral, normal, normal): Definitely James. He was on fire.",
+            "A (male, neutral, normal, normal): Yeah, he really carried the team.",
+            "B (female, happy, fast, high): Absolutely, he's such a game-changer."
+        ],
+        "current_turn": "A: Do you think they can win the championship?",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, happy, fast, high)",
+        "current_turn_style_3": "(male, surprised, normal, high)",
+        "response_of_current_style_1": "B (female, neutral, normal, normal): It's possible, but they have some tough competition.",
+        "response_of_current_style_2": "B (female, happy, fast, high): Oh, for sure! They're playing so well this season.",
+        "response_of_current_style_3": "B (female, surprised, normal, high): Wow, you really think so? That would be amazing!"
+    },
+    "Basketball game":{
+        "history turns": [
+            "A (male, happy, fast, normal): Wow, did you see that dunk last night?",
+            "B (female, surprised, normal, high): Yeah, it was incredible! The whole crowd went wild!",
+            "A (male, neutral, normal, normal): The defense was pretty solid too.",
+            "B (female, happy, fast, high): Absolutely, they really stepped up their game.",
+            "A (male, sad, slow, low): But it's a shame our team couldn't win.",
+            "B (female, neutral, normal, normal): Yeah, they were so close.",
+            "A (male, happy, fast, high): Next game, they'll definitely get it!",
+            "B (female, surprised, fast, high): I hope so! They've got the potential."
+        ],
+        "current_turn": "A: Can't wait for the playoffs to start.",
+        "current_turn_style_1": "(male, happy, fast, high)",
+        "current_turn_style_2": "(male, neutral, normal, normal)",
+        "current_turn_style_3": "(male, sad, slow, low)",
+        "response_of_current_style_1": "B (female, happy, fast, high): Me too! It's going to be so exciting!",
+        "response_of_current_style_2": "B (female, neutral, normal, normal): Yeah, it should be interesting.",
+        "response_of_current_style_3": "B (female, sad, slow, low): I just hope they don't get knocked out early."
+    },
+    "Cars":{
+        "history turns": [
+            "A (male, happy, normal, normal): Hey, did you see the new sports car that just came out?",
+            "B (female, surprised, fast, high): Yeah, I did! It's so sleek. Do you know the specs?",
+            "A (male, neutral, normal, normal): It's got a V8 engine with 500 horsepower.",
+            "B (female, excited, fast, high): Wow, that's impressive! How's the interior?",
+            "A (male, neutral, normal, normal): The interior is really luxurious, with leather seats and a high-tech dashboard.",
+            "B (female, curious, normal, normal): Sounds amazing. Do you know the price?",
+            "A (male, neutral, normal, normal): It's quite expensive, around $90,000.",
+            "B (female, neutral, normal, normal): That's pretty steep, but it sounds worth it."
+        ],
+        "current_turn": "A: I think it's a great car for car enthusiasts.",
+        "current_turn_style_1": "(male, happy, normal, normal)",
+        "current_turn_style_2": "(male, neutral, normal, normal)",
+        "current_turn_style_3": "(male, neutral, slow, low)",
+        "response_of_current_style_1": "B (female, happy, fast, high): Totally! It's a dream car for anyone who loves driving.",
+        "response_of_current_style_2": "B (female, neutral, normal, normal): Yeah, it definitely seems like a solid choice for them.",
+        "response_of_current_style_3": "B (female, neutral, slow, low): I agree, it seems ideal for car enthusiasts."
+    },
+    "Nuclear weapons":{
+        "history_turns": [
+            "A (male, neutral, normal, normal): Do you think nuclear weapons are still a significant threat today?",
+            "B (female, neutral, normal, normal): Absolutely, the potential for destruction is immense.",
+            "A (male, neutral, normal, normal): But haven't we seen a reduction in the number of these weapons?",
+            "B (female, happy, normal, high): Yes, but even a few can cause a lot of damage.",
+            "A (male, neutral, slow, low): It's scary to think about the consequences.",
+            "B (female, sad, slow, low): I know... the humanitarian impact would be devastating.",
+            "A (male, surprised, fast, high): Did you hear about the new disarmament treaty?",
+            "B (female, happy, normal, normal): Yes, it's a step in the right direction!"
+        ],
+        "current_turn": "A: What are your thoughts on its effectiveness?",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, happy, normal, high)",
+        "current_turn_style_3": "(male, sad, slow, low)",
+        "response_of_current_style_1": "B (female, neutral, normal, normal): It's hard to say, but any progress is good progress.",
+        "response_of_current_style_2": "B (female, happy, normal, high): I think it's fantastic! Hopefully, it leads to more cooperation.",
+        "response_of_current_style_3": "B (female, sad, slow, low): I'm not sure... there's still so much work to be done."
+    },
+    "Music":{
+        "history_turns": [
+            "A (male, happy, normal, high): I can't believe we got tickets to the concert!",
+            "B (female, happy, normal, high): I know, right? It's going to be amazing!",
+            "A (male, neutral, normal, normal): Have you listened to their new album yet?",
+            "B (female, surprised, fast, high): Yes! It's so different from their old stuff.",
+            "A (male, happy, normal, high): I love how they've evolved their sound.",
+            "B (female, happy, normal, high): Me too. Their new style is really refreshing.",
+            "A (male, neutral, normal, normal): Do you have a favorite song from the album?",
+            "B (female, neutral, normal, normal): I think I like track number four the best."
+        ],
+        "current_turn": "A: That's a great choice.",
+        "current_turn_style_1": "(male, happy, normal, high)",
+        "current_turn_style_2": "(male, neutral, normal, normal)",
+        "current_turn_style_3": "(male, sad, slow, low)",
+        "response_of_current_style_1": "B (female, happy, normal, high): Yeah, it's such a fun song. I love the energy!",
+        "response_of_current_style_2": "B (female, neutral, normal, normal): Yeah, it's definitely one of the better tracks.",
+        "response_of_current_style_3": "B (female, sad, slow, low): Yeah, it helps me feel a bit better when I'm down."
+    },
+    "Computer game":{
+        "history turns": [
+            "A (male, happy, normal, normal): I finally beat the boss level last night!",
+            "B (female, surprised, fast, high): No way! That level is insanely hard!",
+            "A (male, happy, normal, normal): Yeah, it took me like 50 tries, but I did it.",
+            "B (female, happy, fast, high): That's amazing! You must feel so accomplished.",
+            "A (male, happy, normal, normal): Definitely! Now I can move on to the next chapter.",
+            "B (female, happy, normal, high): What's the next chapter about?"
+        ],
+        "current_turn": "A: It's about exploring a haunted mansion.",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, happy, fast, high)",
+        "current_turn_style_3": "(male, surprised, normal, high)",
+        "response_of_current_style_1": "B (female, neutral, normal, normal): That sounds interesting. Any new challenges?",
+        "response_of_current_style_2": "B (female, happy, fast, high): Wow, that sounds so cool! I can't wait to hear about it!",
+        "response_of_current_style_3": "B (female, surprised, fast, high): Seriously? A haunted mansion? That's going to be intense!"
+    },
+    "Loneliness":{
+        "history_turns": [
+            "A (female, sad, slow, low): I've been feeling really lonely lately.",
+            "B (male, neutral, normal, normal): I'm sorry to hear that. Is there anything I can do?",
+            "A (female, sad, slow, low): I don't know, just talking helps a bit.",
+            "B (male, happy, normal, high): I'm always here to talk! What's been on your mind?",
+            "A (female, sad, slow, low): Just the usual stuff, you know, feeling isolated.",
+            "B (male, neutral, normal, normal): Yeah, it's tough when you feel cut off from everyone."
+        ],
+        "current_turn": "A: Thanks, I appreciate that.",
+        "current_turn_style_1": "(female, sad, slow, low)",
+        "current_turn_style_2": "(female, neutral, normal, normal)",
+        "current_turn_style_3": "(female, happy, fast, high)",
+        "response_of_current_style_1": "B (male, sad, slow, low): Anytime, I'm here for you.",
+        "response_of_current_style_2": "B (male, neutral, normal, normal): No problem, that's what friends are for.",
+        "response_of_current_style_3": "B (male, happy, fast, high): You got it! Let's keep chatting."
+    },
+    "Missed Opportunities":{
+        "history turns": [
+            "A (male, happy, fast, normal): Hey, did you hear about the concert last night?",
+            "B (female, surprised, normal, high): No, what happened?",
+            "A (male, happy, fast, normal): It was amazing! The band played all their hits.",
+            "B (female, sad, slow, low): I wish I could've gone. I had to work late.",
+            "A (male, neutral, normal, normal): That's a bummer. Maybe next time.",
+            "B (female, neutral, normal, normal): Yeah, I hope so."
+        ],
+        "current_turn": "A: You know, I had an extra ticket.",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, happy, fast, high)",
+        "current_turn_style_3": "(male, sad, slow, low)",
+        "response_of_current_style_1": "B (female, neutral, normal, normal): Really? I didn't know that.",
+        "response_of_current_style_2": "B (female, happy, fast, high): No way! That would've been awesome!",
+        "response_of_current_style_3": "B (female, sad, slow, low): Oh man, that's such a shame."
+    },
+    "Regrets":{
+        "history_turns": [
+            "A (male, sad, normal, low): I can't believe I missed the deadline.",
+            "B (female, neutral, normal, normal): It happens to the best of us, don't beat yourself up.",
+            "A (male, sad, slow, low): It's just that I worked so hard on it.",
+            "B (female, neutral, normal, normal): I know, and your effort was amazing.",
+            "A (male, sad, slow, low): But it wasn't enough.",
+            "B (female, neutral, normal, normal): You did your best. That's what matters."
+        ],
+        "current_turn": "A: I guess so.",
+        "current_turn_style_1": "(male, sad, slow, low)",
+        "current_turn_style_2": "(male, neutral, normal, normal)",
+        "current_turn_style_3": "(male, happy, fast, high)",
+        "response_of_current_style_1": "B (female, sad, normal, low): It's okay to feel down about it.",
+        "response_of_current_style_2": "B (female, neutral, normal, normal): Yeah, sometimes things just don't go as planned.",
+        "response_of_current_style_3": "B (female, happy, fast, high): See, that's the spirit! On to the next!"
+    },
+    "Conflict":{
+        "history turns": [
+            "A (male, angry, fast, high): You never listen to what I say!",
+            "B (female, sad, slow, low): I do listen, but you always shout.",
+            "A (male, angry, fast, high): Because I am frustrated!",
+            "B (female, neutral, normal, normal): Can we just talk calmly?",
+            "A (male, angry, fast, high): It's hard to stay calm when you keep ignoring my points.",
+            "B (female, sad, slow, low): I don't ignore them, I just need time to process."
+        ],
+        "current_turn": "A: We need to find a better way to communicate.",
+        "current_turn_style_1": "(male, neutral, normal, normal)",
+        "current_turn_style_2": "(male, sad, slow, low)",
+        "current_turn_style_3": "(male, happy, fast, high)",
+        "response_of_current_style_1": "B (female, neutral, normal, normal): Yeah, I agree. Maybe we should try to be more patient with each other.",
+        "response_of_current_style_2": "B (female, sad, slow, low): I know... It's just really hard sometimes.",
+        "response_of_current_style_3": "B (female, happy, fast, high): You're right! Let's try to be more understanding and see how it goes."
+    }
+}
