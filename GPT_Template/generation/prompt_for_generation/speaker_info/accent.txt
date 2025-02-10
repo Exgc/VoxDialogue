@@ -1,0 +1,53 @@
+You are a human-like dialogue data expert that imitates real human-to-human spoken dialogue. I will provide you with one topic, and you can imagine a conversational context in conjunction with it between two speakers of the same accent from the accent list. You need to make sure that the speaking style is very natural.
+
+Important tips:
+- Consider a scenario where after the [[[number of turns]]] history turns, there is a current turn with neutral-sentiment text and will receive different possible response in terms of semantics. Just one sentence for each turn. The sentence is spoken and spontaneous, not too formal.
+- Speakers will have the same accents in [[[accent]]]. It’s important to ensure that the vocabulary, expressions, and spelling you use in conversation are appropriate for your accent.
+
+Please strictly follow these rules:
+0. We use a special token <> to represent the class type that you have to generate. Do not have <> in the output.
+1. You can only use these styles for representing speaking style (<gender>, <accent>). Important, do not use other classes that are not defined below!!!
+2. Use diverse but common-sense speaking styles in the conversation context.
+3. The text of the current turn is in neutral sentiment, and the response turn should carefully consider the current turn, responding naturally.
+4. There are two speakers (A and B) in the dialogue. The speakers A and B talk with back-and-forth interaction.
+5. Each turn should follow the format: <speaker> (<gender>, <accent>): <text>
+6. The order of turns is history turns -> current turn -> upcoming response.
+7. The transition of dialogue turns should be very consistent, and the conversation should follow common sense.
+8. You need to decide the relationship between A and B.
+9. The output valid dictionary format is as below:
+{
+  "history turns": [ "<speaker> (<gender>, <accent>): <text>", ...], 
+  "current_turn": "<speaker>: <text>",
+  "current_turn_style_1": "(<gender>, <accent>)",
+  "current_turn_style_2": "(<gender>, <accent>)",
+  "current_turn_style_3": "(<gender>, <accent>)",
+  "response_of_current_style_1": "<speaker> (<gender>, <accent>): <text>",
+  "response_of_current_style_2": "<speaker> (<gender>, <accent>): <text>",
+  "response_of_current_style_3": "<speaker> (<gender>, <accent>): <text>",
+}
+10. Output the valid dictionary example, so that it can be parsed as a dictionary.
+11. For <speaker>, remember to use only A or B.
+12. For <gender>, remember to use only "male" and "female".
+13. For <accent>, remember to use accent in [[[accent]]] to represent the speaker's accent.
+14. The accent should remain the same for the two speakers.
+
+Given the context of [[[number of turns]]] conversational turns with speaking-related styles. Make sure that style complies with rules 12 through 14. Predict the upcoming rule-compliant response. We use (<gender>, <accent>) to represent speaking style. It’s important to ensure that the vocabulary, expressions, and spelling you use in conversation are appropriate for your accent.
+
+Example:
+{
+    "history_turns": [
+        "A (female, en-US): Have you tried taking the train lately? It's quicker than I expected.",
+        "B (male, en-US): Really? I always thought there'd be delays. When did you go?",
+        "A (female, en-US): Last weekend. I was surprised how smooth the ride was.",
+        "B (male, en-US): That's awesome! Do you think the improvements might last?"
+    ],
+    "current_turn": "A: It sounds like they're making an effort to upgrade the service.",
+    "current_turn_style_1": "(female, en-US)",
+    "current_turn_style_2": "(female, en-US)",
+    "current_turn_style_3": "(female, en-US)",
+    "response_of_current_style_1": "B (male, en-US): I hope so! Would be good for more people to use it.",
+    "response_of_current_style_2": "B (male, en-US): Definitely! Fingers crossed they keep this up.",
+    "response_of_current_style_3": "B (male, en-US): Yeah, it'd be nice to see more consistent efforts.",
+},
+
+

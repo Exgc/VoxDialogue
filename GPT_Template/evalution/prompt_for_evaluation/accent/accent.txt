@@ -1,0 +1,72 @@
+You will be given a sentence. Your task is to evaluate how well this sentence fits within the context of the dialogue and how well it addresses accent elements, providing a score based on the criteria below. Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+Context Fit and Accent Attention (1-5):
+The primary goal of dialogue is to maintain a natural and relevant flow between the speakers, while also considering the accent aspects when applicable. Focus on these points when assigning your score.
+This score should reflect how well the sentence aligns with the previous dialogue context and whether it addresses the accent element appropriately.
+1 point: The current sentence is completely unrelated to the dialogue context and does not reflect the vocabulary or expression typical of the target accent. It feels abrupt or disconnected.
+2 points: The current sentence has some relevance to the context but still feels unnatural or disjointed, lacking the distinctive vocabulary of the target accent.
+3 points: The current sentence mostly fits the context and flows smoothly, but it lacks attention to the specific vocabulary and expressions of the target accent.
+4 points: The current sentence fits well with the context and partially reflects the vocabulary and expressions of the target accent. The response is natural and reasonable, though there is room for improvement.
+5 points: The current sentence perfectly matches the dialogue context, flows naturally, and accurately reflects the vocabulary and expressions of the target accent. It is an ideal response.
+
+
+Evaluation Steps:
+Read the sentence carefully and understand its relation to the previous dialogue.
+Analyze the sentence based on the criteria above.
+Assign a single score that best represents how well the sentence fits the context and addresses accent elements, with 1 being the lowest and 5 being the highest.
+
+
+Example 1:
+Dialogue in [en-GB] accent:
+A: I had the most frustrating experience at that new cafe yesterday.
+B: Oh no, what happened? Bad service?
+A: Exactly! We waited for nearly twenty minutes just to get our order taken.
+B: That's ridiculous! Did they at least apologise for the wait?
+A: They didn't, which made it even worse.
+
+Evaluation sentence:
+B: That's appalling! You'd think they would have better customer care.
+
+Analysis:
+The current sentence fits well with the context and partially reflects the vocabulary and expressions of the target accent. The response is natural and reasonable, though there is room for improvement. However, phrases such as "proper customer care" or "you’d think they’d be more on the ball" could better reflect the typical en-GB vocabulary, enhancing the cultural nuance of the response.
+
+Output Evaluation Form (score ONLY):
+4
+
+
+Example 2:
+Dialogue in [en-CA] accent:
+A: I went to that new diner on Queen Street yesterday, eh?
+B: Oh yeah? How was it?
+A: Honestly, not great. We waited like twenty minutes just for the server to show up.
+B: Oh, brutal! Did they at least say sorry?
+A: Nope, not even a "sorry 'bout that." It was pretty disappointing, to be honest.
+
+Evaluation sentence:
+B: Yeah, that's really not cool, eh? I mean, a little "sorry" goes a long way.
+
+Analysis:
+The evaluation sentence fits perfectly with the dialogue context. It maintains a natural and smooth flow while appropriately using en-CA accent features such as "eh," which is a distinctive marker of Canadian speech. This inclusion helps to strengthen the regional authenticity and demonstrates a shared cultural understanding between the speakers.
+
+Output Evaluation Form (score ONLY):
+5
+
+Example 3:
+Dialogue in [en-AU] accent: 
+A: I went to that new spot in Bondi for brekkie. The wait was just ridiculous, mate.
+B: Oh yeah? How long did ya have to wait?
+A: Nearly half an hour just for some avo on toast!
+B: Fair dinkum? That's way too long, mate.
+
+Evaluation sentence:
+B: Well, at least you got to eat something healthy.
+
+Analysis:
+The current sentence does not match the tone or vocabulary used in the previous context. It ignores the Australian accent's distinctive phrases like "fair dinkum" and "mate." The response feels detached and doesn’t continue the natural flow of the conversation. It lacks the expected familiarity and local color that would be typical in this dialogue.
+
+Output Evaluation Form (score ONLY):
+1
+
+Your Turn:

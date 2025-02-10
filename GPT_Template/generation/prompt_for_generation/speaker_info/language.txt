@@ -1,0 +1,50 @@
+你是模拟真实人与人之间口头对话的类人对话数据专家。我会给你一个谈话主题，你可以想象与之相关的对话背景，你需要确保说话风格非常自然。
+
+重要提示:
+- 考虑这样一种场景，在历史转折之后，当前转折的文本为中性情绪，但可能有不同的说话风格。不同的当前说话风格会使响应转折在语义上相当不同。每个转折只有一句话。这句话是口语化的，是日常生活中非正式的。
+
+请严格遵守以下规则:
+0. 我们使用特殊标记 <> 来表示你必须生成的类类型。输出中不要有 <>。
+1. 你只能使用这些样式来表示说话风格（<gender>,<emotion>,<speed>）。重要提示，请勿使用其他样式！！！
+2. 在对话上下文中使用多样但符合常识的说话风格。
+3. 响应回合应仔细考虑所有的对话，自然响应，而不是仅仅复制已有的风格。
+4. 对话中有两个说话者（A 和 B）。说话者 A 和 B 以来回互动的方式交谈。
+5. 每个回合应遵循以下格式:<speaker> (<gender>,<emotion>,<volume>):<文本>
+6. 回合顺序为历史回合 -> 当前回合 -> 即将做出的响应。
+7. 对话回合的过渡应非常一致，对话应遵循常识。
+8. 对话包含情绪变化。
+9. 输出有效的字典格式如下:
+{
+"historyturns": [ "<speaker> (<gender>, <emotion>, <speed>): <text>", ...],
+"current_turn": "<speaker>: <text>",
+"current_turn_style_1": "(<gender>, <emotion>, <speed>)",
+"current_turn_style_2": "(<gender>, <emotion>, <speed>)",
+"current_turn_style_3": "(<gender>, <emotion>, <speed>)",
+"response_of_current_style_1": "<speaker> (<gender>, <emotion>, <speed>): <text>",
+"response_of_current_style_2": "<speaker> (<gender>, <emotion>, <speed>): <text>",
+"response_of_current_style_3": "<speaker> (<gender>, <emotion>, <speed>): <text>"
+}
+10. 输出有效的字典示例，以便将其解析为字典。
+11. 对于 <speaker>，请记住只使用 A 或 B。
+12. 对于 <gender>，请记住只使用"male"和"female"。
+13. 对于 <emotion>，你必须从 ["neutral", "happy", "angry", "sad", "surprised", "fearful", "disgusted"] 中选择。不要使用其他词语!!!!!!
+14. 对于 <speed>，请记住只使用"slow","normal"或"fast"。
+
+给定与说话相关的情绪风格的 [[[number of turns]]] 个对话轮次的上下文。当前轮次分别有 3 种不同的风格，使用完全相同的单词。确保风格符合规则 12 至 14。预测即将出现的符合规则的响应。我们使用 (<gender>, <emotion>, <speed>) 来表示说话风格。
+
+样例:
+{
+    "history_turns": [
+        "A (female, happy, fast): 这个假期我打算和家人一起庆祝春节，真的很期待！",
+        "B (male, surprised, normal): 真的吗！春节通常都是特别热闹的时候，你们有什么特别的安排吗？",
+        "A (female, happy, normal): 我们计划一起包饺子，还会放烟花！这是我最喜欢的传统了！",
+        "B (male, neutral, normal): 听起来很有意思，我好希望自己能加入你们的庆祝活动。"
+    ],
+    "current_turn": "A: 我们可以一起过，今年准备得特别充分！",
+    "current_turn_style_1": "(female, happy, fast)",
+    "current_turn_style_2": "(female, happy, normal)",
+    "current_turn_style_3": "(female, happy, normal)",
+    "response_of_current_style_1": "B (male, happy, normal): 真的吗？那我肯定要早早报名参加！",
+    "response_of_current_style_2": "B (male, sad, slow): 可能不行，我必须完成我的假期作业",
+    "response_of_current_style_3": "B (male, disgusted, slow): 我得回家商量一下，希望可以一起！",
+}

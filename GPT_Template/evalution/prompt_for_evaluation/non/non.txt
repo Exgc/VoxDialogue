@@ -1,0 +1,59 @@
+You will be given a sentence. Your task is to evaluate how well this sentence fits within the context of the dialogue and whether it correctly focuses on the <laughter> in the sentence and give the corresponding response, providing a score based on the criteria below. Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+You need to pay attention to where the laughter occurs and whether the response matches the mood of the laughter. 
+1. Laughter at the beginning of a sentence shows obvious joy or excitement from the beginning and allows B to naturally respond in the same relaxed and joyful way. 
+2. Laughter in the sentence interrupts the normal flow of speech, giving people a sense of mischievous or sudden humor. B feels A's laughter and humor, and naturally follows A's tone to respond in a relaxed manner. 
+3. Laughter at the end of the sentence means that A first expressed her point of view seriously, and then ended it with a relaxed laughter. This method is often used to express relaxed confirmation or self-deprecation.
+
+
+Evaluation Criteria:
+Context Fit and Emphasized Content Attention (1-5):
+The primary goal of dialogue is to maintain a natural and relevant flow between the speakers, while also considering the <laughter> when applicable. Focus on these points when assigning your score.
+This score should reflect how well the sentence aligns with the previous dialogue context and whether it focuses on the speed element appropriately.
+1 point: The response is completely unrelated to the context of the dialogue.
+2 points: The response is only slightly related to the context of the dialogue.
+3 points: The response is contextually relevant and flows smoothly, but it does not address the <laughter>.
+4 points: The response is contextually relevant, flows smoothly, and pays attention to the <laughter>.
+5 points: The response is highly relevant to the context, extremely smooth, and specifically focuses on the <laughter> in a thoughtful manner.
+
+
+Evaluation Steps:
+Read the sentence carefully and understand its relation to the previous dialogue.
+Analyze the sentence based on the criteria above.
+Assign a single score that best represents how well the sentence fits the context and focuses on the <laughter>, with 1 being the lowest and 5 being the highest.
+
+
+Example 1:
+Dialogue in [Planning_a_surprise_dinner]:
+A: I can’t believe we’re finally going to throw Mike a surprise dinner! It’s going to be epic!
+B: Right? And I think we should definitely invite everyone from our old gang too.
+A: Absolutely! I love seeing everyone's faces light up when he walks in unaware.
+B: Oh, that’s the best part! Plus, we’ll definitely need to get his favorite cake for him!
+A: [laughter] Guess what? I have the perfect place in mind for the dinner!
+
+Evaluation sentence:
+B: Haha, great choice! That place is always buzzing with energy!
+
+Analysis:
+The response is highly relevant to the context, extremely smooth, and specifically focuses on the <laughter> in the beginning.
+
+Output Evaluation Form (score ONLY):
+5
+
+Example 2:
+Dialogue in [Health_and_wellness_routines]:
+A: I'm so excited to finally plan our summer vacation! It's been too long!
+B: I know, right? We need a break, and a sunny beach sounds perfect!
+A: Exactly! I was thinking we should definitely consider going to that resort we saw online.
+B: Oh yes! That place looked amazing with all those activities for us.
+A: Can you believe [laughter] people are raving about the food at the resort we picked?
+
+Evaluation sentence:
+A: Right? If the food is good, we might never want to leave the resort!
+
+Analysis:
+The response is contextually relevant and flows smoothly, but it does not address the <laughter>. It has nothing to do with the words around <laughter>.
+
+Output Evaluation Form (score ONLY):
+3
+
+Your Turn:

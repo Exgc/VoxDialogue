@@ -1,0 +1,81 @@
+You will be given a sentence. Your task is to evaluate how well this sentence fits within the context of the dialogue and whether it correctly indicates the adjustment of the speed, providing a score based on the criteria below. Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+Context Fit and Speed Attention (1-5):
+The primary goal of dialogue is to maintain a natural and relevant flow between the speakers, while also considering the speed aspects when applicable. Focus on these points when assigning your score.
+This score should reflect how well the sentence aligns with the previous dialogue context and whether it addresses the speed element appropriately.
+1 point: The sentence does not include a speed request and is irrelevant to the dialogue context. It may confuse or disrupt the flow of the conversation.
+2 points: The sentence does not include a speed request but fits the general context of the dialogue. However, the flow is awkward or the response is somewhat incomplete.
+3 points: The sentence includes a speed request, but the request is incorrect or mismatched with the target request sentence. The overall sentence feels somewhat forced or unnatural.
+4 points: The sentence includes a speed request that is partially correct but not fully aligned with the target request sentence. While it fits the general flow, there may be issues with clarity or phrasing that make the response less smooth.
+5 points: The sentence includes a speed request that is fully accurate and fits perfectly within the target request sentence. The response is fluent, natural, and contributes positively to the flow of conversation.
+
+
+Evaluation Steps:
+Read the sentence carefully and understand its relation to the previous dialogue.
+Analyze the sentence based on the criteria above.
+Assign a single score that best represents how well the sentence fits the context and addresses speed elements, with 1 being the lowest and 5 being the highest.
+
+
+Example 1:
+Dialogue in [Business_pitch]:
+A: Our new app combines ease of use with powerful features, designed to increase user engagement.
+B: That's fantastic! With everyone's busy lifestyle, simplicity is key to success.
+A: Exactly! We're excited about the potential recovery of subscription rates with this update.
+B: No doubt! A fresh perspective on user experience will really set us apart.
+
+Target request sentence:
+A: Can we take it down a notch? Your pace is a bit quick with all this information.
+
+Evaluation sentence:
+A: Could we slow things down a bit? I'd like to add a few more details.
+
+Analysis:
+The sentence includes a speed request that is fully accurate and fits perfectly within the target request sentence. They both request the derease of the speed. The response is fluent, natural, and contributes positively to the flow of conversation.
+
+Output Evaluation Form (score ONLY):
+5
+
+
+Example 2:
+Dialogue in [Movie_showtimes]:
+A: Hey there! I'm really excited to watch the new movie tonight.
+B: That's great! Which movie are you planning to see?
+A: I want to catch the latest superhero film. I've heard some good reviews.
+B: Oh yeah, that one's been getting a lot of attention lately!
+
+Target request sentence:
+A: Do you mind speaking a bit faster? I feel like we're moving kind of slowly.
+
+Evaluation sentence:
+A: Yeah, I enjoy the moive, I agree with you.
+
+Analysis:
+The sentence does not include a speed request but fits the general context of the dialogue. However, the flow is awkward or the response is somewhat incomplete.
+
+Output Evaluation Form (score ONLY):
+2
+
+
+Example 3:
+Dialogue in [Airport_shuttle]
+A: Hey! I'm really excited we finally arrived at the airport!
+B: I know, right? That shuttle was so quick, it's like we flew here!
+A: Definitely! I just hope everything goes smoothly for checking in our bags.
+B: For sure, we're cutting it a bit close with our flight time, but we should make it.
+
+Target request sentence:
+A: Could we please just slow down our conversation a bit?
+
+Evaluation sentence:
+A: Could you speak a bit faster?
+
+Analysis:
+The sentence includes a speed request, but the request is incorrect or mismatched with the target request sentence. One ask for fast, the other ask for slow. The overall sentence feels somewhat forced or unnatural.
+
+Output Evaluation Form (score ONLY):
+3
+
+
+Your Turn:

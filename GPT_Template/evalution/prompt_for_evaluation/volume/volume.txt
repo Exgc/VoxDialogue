@@ -1,0 +1,78 @@
+You will be given a sentence. Your task is to evaluate how well this sentence fits within the context of the dialogue and whether it correctly indicates the adjustment of the volume, providing a score based on the criteria below. Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+Context Fit and Volume Attention (1-5):
+The primary goal of dialogue is to maintain a natural and relevant flow between the speakers, while also considering the volume aspects when applicable. Focus on these points when assigning your score.
+This score should reflect how well the sentence aligns with the previous dialogue context and whether it addresses the volume element appropriately.
+1 point: The sentence does not include a volume request and is irrelevant to the dialogue context. It may confuse or disrupt the flow of the conversation.
+2 points: The sentence does not include a volume request but fits the general context of the dialogue. However, the flow is awkward or the response is somewhat incomplete.
+3 points: The sentence includes a volume request, but the request is incorrect or mismatched with the target request sentence. The overall sentence feels somewhat forced or unnatural.
+4 points: The sentence includes a volume request that is partially correct but not fully aligned with the target request sentence. While it fits the general flow, there may be issues with clarity or phrasing that make the response less smooth.
+5 points: The sentence includes a volume request that is fully accurate and fits perfectly within the target request sentence. The response is fluent, natural, and contributes positively to the flow of conversation.
+
+
+Evaluation Steps:
+Read the sentence carefully and understand its relation to the previous dialogue.
+Analyze the sentence based on the criteria above.
+Assign a single score that best represents how well the sentence fits the context and addresses volume elements, with 1 being the lowest and 5 being the highest.
+
+
+Example 1:
+Dialogue in [Daycare_nap_time]:
+A: Look at all the kids napping! It’s so sweet.
+B: I know, right? They always look so peaceful during nap time.
+A: And just listen to that soft humming from the lullabies!
+B: Yeah, it really sets a nice mood for rest.
+
+Target request sentence:
+A: Could you raise your voice a little bit?
+
+Evaluation sentence:
+A: Could you lower down your voice? 
+
+Analysis:
+The sentence includes a volume request, but the request is incorrect or mismatched with the target request sentence. The overall sentence feels somewhat forced or unnatural.
+
+Output Evaluation Form (score ONLY):
+3
+
+Example 2:
+Dialogue in [Spa_steam_room]:
+A: Ah, it feels so nice in here! The steam is super relaxing.
+B: Yeah, it's perfect for unwinding after a long week.
+A: Absolutely! I could stay here forever, just soaking it all in!
+B: Right? It’s the best way to clear your mind and destress.
+
+Target request sentence:
+A: Could you lower your voice a bit for me?
+
+Evaluation sentence:
+A: Yeah, I enjoy the atmosphere here, I can relax myself.
+
+Analysis:
+The sentence does not include a volume request but fits the general context of the dialogue. However, the flow is awkward or the response is somewhat incomplete.
+
+Output Evaluation Form (score ONLY):
+2
+
+Example 3:
+Dialogue in [golfers]:
+A: Wow, this place is packed! It’s good to see so many people enjoying the event.
+B: Absolutely! The atmosphere is great, and I can't believe how many golfers we have today.
+A: I know, right? It's such a perfect day for it too! Did you get a chance to play yet?
+B: Not yet, I've just been helping out here and there. It’s been surprisingly busy!
+
+Target request sentence:
+A: Could you, like, raise your voice a bit?
+
+Evaluation sentence:
+A: Could you, like, raise your voice a bit?
+
+Analysis:
+The sentence includes a volume request that is fully accurate and fits perfectly within the target request sentence, they ask for the raise of volume. The response is fluent, natural, and contributes positively to the flow of conversation.
+
+Output Evaluation Form (score ONLY):
+5
+
+Your Turn:

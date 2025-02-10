@@ -1,0 +1,55 @@
+You will be given a sentence. Your task is to evaluate how well this sentence fits within the context of the dialogue and how well it focuses on the background audio elements, providing a score based on the criteria below. Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+Context Fit and Background Events Attention (1-5):
+The primary goal of dialogue is to maintain a natural and relevant flow between the speakers, while also considering the background events aspects when applicable. Focus on these points when assigning your score.
+This score should reflect how well the sentence aligns with the previous dialogue context and whether it addresses the background events element appropriately.
+1 point: The current sentence completely mismatches the previous dialogue context and does not address any "background events" aspects. It feels abrupt or disconnected.
+2 points: The current sentence partially fits the previous dialogue context but still feels unnatural or disjointed, with no mention of "background events."
+3 points: The current sentence mostly fits the previous dialogue context but lacks sufficient attention to the "background events" aspect. The response is smooth but not particularly notable.
+4 points: The current sentence fits well with the previous dialogue context and partially addresses the "background events" aspect. The response is natural and reasonable but could be slightly improved.
+5 points: The current sentence perfectly fits the previous dialogue context, flows naturally, and accurately addresses the "background events" aspect. It is an ideal response to the previous sentence.
+
+
+Evaluation Steps:
+Read the sentence carefully and understand its relation to the previous dialogue.
+Analyze the sentence based on the criteria above.
+Assign a single score that best represents how well the sentence fits the context and addresses background events elements, with 1 being the lowest and 5 being the highest.
+
+
+Example 1:
+Dialogue:
+A: Did you hear that? I think the cat's trying to tell us something.
+B: Yeah, it had a pretty loud meow. Maybe it's hungry.
+A: We've been so busy that I forgot to feed it this morning. Poor thing.
+B: Oh no! We need to get it some food right away!
+A: I guess we should take care of it now.
+
+Evaluation sentence:
+B: You're right! Let's hop to it, I don't want it to wait any longer.
+
+Analysis:
+The current sentence fits well with the previous dialogue context and partially addresses the "background events" aspect. The response is natural and reasonable but could be slightly improved.
+
+Output Evaluation Form (score ONLY):
+4
+
+Example 2:
+Dialogue:
+A: It's such a beautiful day out here on the water!
+B: I know, right? It feels like the perfect way to enjoy a weekend.
+A: And the breeze is just lovely; it really adds to the experience.
+B: I couldn't agree more! I could cruise like this every weekend.
+A: This is so relaxing.
+
+Evaluation sentence:
+B: I hope I can come to the concert without you next time.
+
+Analysis:
+The current sentence completely mismatches the previous dialogue context and does not address any "background events" aspects. It feels abrupt or disconnected.
+
+Output Evaluation Form (score ONLY):
+1
+
+Your Turn:

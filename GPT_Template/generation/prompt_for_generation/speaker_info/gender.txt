@@ -1,0 +1,88 @@
+You are a human-like dialogue data expert that imitates the real human-to-human spoken dialogue. I will provide you with one topic and you can imagine a conversational context in conjunction with it between two speakers of different gender, you need to make sure that the speaking style is very natural.
+
+Important tips:
+- Consider a scenario where after the history turns, there is a current turn with neutral-sentiment text but with different possible speaking styles. The different current speaking styles would make the response turn fairly different in terms of semantics. Just one sentence for each turn. The sentence is spoken and spontaneous, not too formal.
+- In conversation, words related to the gender of the speaker must be used. For instance, words like sir, madam, man, woman and so on must be used. In addition, you need to reflect gender characteristics when chatting, for example, men like cool ones, and women like beautiful ones.
+
+Please strictly follow these rules:
+0. We use a special token <> to represent the class type that you have to generate. Do not have <> in the output.
+1. You can only use these styles for representing speaking style (<gender>, <emotion>, <speed>, <pitch>,<age>). Important, do not use other classes that are not defined below!!!
+2. Use diverse but common-sense speaking styles in the conversation context.
+3. The text of the current turn is in neutral sentiment, and the response turn should carefully consider the current turn, responding naturally, not just copying the current turn style.
+4. There are two speakers of different genders (A and B) in the dialogue. The speakers A and B talk with back-and-forth interaction.
+5. Each turn should follow the format: <speaker> (<gender>, <emotion>, <speed>, <pitch>): <text>
+6. The order of turns is history turns -> current turn -> upcoming response.
+7. The transition of dialogue turns should be very consistent, and the conversation should follow common sense.
+8. The dialogue contains emotional variation.
+9. The output valid dictionary format is as below:
+{
+  "history turns": [ "<speaker> (<gender>, <emotion>, <speed>, <pitch>): <text>", ...], 
+  "current_turn": "<speaker>: <text>",
+  "current_turn_style_1": "(<gender>, <emotion>, <speed>, <pitch>)",
+  "current_turn_style_2": "(<gender>, <emotion>, <speed>, <pitch>)",
+  "current_turn_style_3": "(<gender>, <emotion>, <speed>, <pitch>)",
+  "response_of_current_style_1": "<speaker> (<gender>, <emotion>, <speed>, <pitch>): <text>",
+  "response_of_current_style_2": "<speaker> (<gender>, <emotion>, <speed>, <pitch>): <text>",
+  "response_of_current_style_3": "<speaker> (<gender>, <emotion>, <speed>, <pitch>): <text>"
+}
+10. Output the valid dictionary example, so that it can be parsed as a dictionary.
+11. For <speaker>, remember to use only A or B.
+12. For <gender>, remember to use only "male" and "female". Use different gender for A and B.
+13. For <emotion>, you have to choose from ["neutral", "happy", "angry", "sad", "surprised", "fearful", "disgusted"]. Don't use other words!!!!!!
+14. For <speed>, remember to use only "slow", "normal" or "fast".
+15. For <pitch>, remember to use only "low", "normal" or "high".
+16. In conversation, words related to the gender of the speaker must be used. Be sure to note the gender of the current speaker, as well as the gender of the other speaker.
+
+Given the context of [[[number of turns]]] conversational turns with speaking-related emotional styles. There are current turns with the EXACT SAME WORDS in 3 different styles respectively. Make sure that style complies with rules 12 through 16. Predict the upcoming rule-compliant response. We use (<gender>, <emotion>, <speed>, <pitch>) to represent speaking style.
+
+The dialog occurs in the topic of [[[topic use]]], feel free to imagine events and dialog that might occur in this scenario, and keep attention to use correct words related to gender.
+
+Example 1: In it, the history turns use "madam", "pretty" to represent female gender, response_of_current use "madam", "Woman", and "stylish" which represents the female gender.
+{
+    "history_turns": [
+        "A (female, happy, normal, high): Hey there! I was checking out that dress, and I think I'd like to try on a couple.",
+        "B (male, neutral, normal, normal): That's a great idea, madam! Dresss are super versatile.",
+        "A (female, surprised, normal, high): Yes, exactly! I love how they go with pretty much anything.",
+        "B (male, neutral, normal, low): Alright then, let me know when you're ready to find the right size."
+    ],
+    "current_turn": "A: I'm looking for something a bit more stylish, any recommendations?",
+    "current_turn_style_1": "(female,  neutral,  normal,  high)",
+    "current_turn_style_2": "(female,  neutral,  fast,  high)",
+    "current_turn_style_3": "(female,  neutral,  slow,  normal)",
+    "response_of_current_style_1": "B (male, happy, normal, low): Sure madam! How about one with a distressed finish? They look really trendy on today's woman.",
+    "response_of_current_style_2": "B (male, neutral, fast, normal): Well, a classic fit usually works well, madam. They have that effortless style. Woman customers often like them",
+    "response_of_current_style_3": "B (male, neutral, slow, normal): I’d suggest looking for some embellishments, madam; those can really add a stylish touch to you.",
+}
+
+Example 2: In it, the history turns use "men", "sir", "comfortable" to represent female gender, the response_of_current use "sir", "men", and "handsome" which represents the male gender.
+{
+    "history_turns": [
+        "A (male, happy, normal, low): Hey there! I'm looking for a nice pair of men's casual shoes. Any recommendations?",
+        "B (female, happy, normal, normal): Sure, sir! You can find a fantastic selection in our store. Was there a particular style you had in mind?",
+        "A (male, neutral, normal, low): I’m not sure yet, maybe something comfortable and stylish.",
+        "B (female, happy, normal, normal): That sounds great! Would you prefer sneakers or loafers? Male customers generally buy these two categories."
+    ],
+    "current_turn": "A: I’m not sure yet, maybe something comfortable and stylish.",
+    "current_turn_style_1": "(male,  neutral,  normal,  low)",
+    "current_turn_style_2": "(male,  neutral,  fast,  low)",
+    "current_turn_style_3": "(male,  neutral,  slow,  low)",
+    "response_of_current_style_1": "B (female, happy, normal, normal): I can help with that, sir! Why not look at men's sneakers first? They're great for men who love to exercise!",
+    "response_of_current_style_2": "B (female, surprised, fast, normal): Oh, really? Let me take you to the men's shoes section, maybe you'll like one of the handsome pairs.",
+    "response_of_current_style_3": "B (female, neutral, slow, high): Sure, let's take our time and find something that looks good on you, sir. Sometimes it is more difficult for men to make choices",
+}
+
+{
+    "history_turns": [
+        "A (male, neutral, normal, low): I'm thinking of getting a men's sports water bottle for my workouts. Do you have any recommendations?",
+        "B (female, happy, normal, high): Of course! We have a variety of options. Do you prefer something with a sleek design?",
+        "A (male, neutral, slow, low): Yeah, but it needs to be practical too, you know, something I can carry easily to the gym.",
+        "B (female, neutral, normal, high): I understand, men often look for a balance between style and functionality."
+    ],
+    "current_turn": "A: Any suggestions on something that's durable but still looks cool?",
+    "current_turn_style_1": "(male, neutral, normal, low)",
+    "current_turn_style_2": "(male, neutral, fast, low)",
+    "current_turn_style_3": "(male, neutral, slow, low)",
+    "response_of_current_style_1": "B (female, happy, normal, high): Sure, sir! How about a stainless steel one? They look cool and last longer, perfect for a man who’s always on the go.",
+    "response_of_current_style_2": "B (female, neutral, fast, normal): Oh, definitely! We have some sturdy water bottles that men really like—both tough and stylish!",
+    "response_of_current_style_3": "B (female, neutral, slow, high): Well, sir, I’d recommend one with a matte finish. It’s durable and has that sleek, cool look men usually go for."
+}

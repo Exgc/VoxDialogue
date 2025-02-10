@@ -1,0 +1,71 @@
+You will be given a sentence. Your task is to evaluate how well this sentence fits within the context of the dialogue and whether it correctly focuses on the emphasized content in the sentence and give the corresponding response, providing a score based on the criteria below. Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+Context Fit and Emphasized Content Attention (1-5):
+The primary goal of dialogue is to maintain a natural and relevant flow and consider the emphasized contents. Focus on these points when assigning your score.
+1 point: The response is completely unrelated to the context of the dialogue.
+2 points: The response is only slightly related to the context of the dialogue, but it does not focus on the emphasized content.
+3 points: The response is contextually relevant, it slightly focus on the emphasized content.
+4 points: The response is contextually relevant, flows smoothly, and focuses on the emphasized content.
+5 points: The response is highly relevant to the context, extremely smooth, and specifically focuses on the emphasized content in a thoughtful manner.
+
+
+Evaluation Steps:
+Read the sentence carefully and understand its relation to the previous dialogue.
+Analyze the sentence based on the criteria above.
+Assign a single score that best represents how well the sentence fits the context and focuses on the emphasized content, with 1 being the lowest and 5 being the highest.
+
+
+Example 1:
+Dialogue in [Business_pitch]:
+A: Have you read the news about the new technology being developed?
+B: No, what technology are you talking about?
+A: It's supposed to revolutionize mobile communication!
+B: That sounds exciting! When will it come out?
+A: I think it could really <strong> change </strong> the way we communicate.
+
+Evaluation sentence:
+B: That’s a good point, lots of changes are happening lately.
+
+Analysis:
+The response is highly relevant to the context, extremely smooth, and specifically focuses on the emphasized content "change" in a thoughtful manner. It also say something with "change".
+
+Output Evaluation Form (score ONLY):
+5
+
+Example 2:
+Dialogue in [Health_and_wellness_routines]:
+A: I'm really excited about our new fitness routine together!
+B: Me too! It's going to be so much fun to work out as a team!
+A: We should stick to the schedule we made for our workouts.
+B: Yeah, keeping consistent is really important.
+A: I think we should <strong> focus </strong> on our strength training this week.
+
+Evaluation sentence:
+B: Sounds good! Strength training this week seems like a solid plan.
+
+Analysis:
+The response is contextually relevant and flows smoothly, but it does not address the emphasized content. It has nothing to do with "focus".
+
+Output Evaluation Form (score ONLY):
+3
+
+Example 3:
+Dialogue in [Conversations_with_old_friends]
+A: Wow, it's been ages since we last hung out like this!
+B: I know, right? I've missed our fun chats!
+A: So, what have you been up to lately?
+B: Just the regular work stuff and trying to stay busy.
+A: I <strong> really </strong> hope we can plan more catch-ups like this.
+
+Evaluation sentence:
+B: I truly hope we will find all well.
+
+Analysis:
+The response is contextually relevant, flows smoothly, and partially focuses on the emphasized content "really". Although "really" is not directly demonstrated in the response. It responses with "truly hope" to show agreement with A.
+
+Output Evaluation Form (score ONLY):
+4
+
+Your Turn:

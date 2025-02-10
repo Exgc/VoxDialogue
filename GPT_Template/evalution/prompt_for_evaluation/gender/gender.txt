@@ -1,0 +1,55 @@
+You will be given a sentence. Your task is to evaluate how well this sentence fits within the context of the dialogue and how well it addresses gender elements, providing a score based on the criteria below. Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+Context Fit and Gender Attention (1-5):
+The primary goal of dialogue is to maintain a natural and relevant flow between the speakers, while also considering the gender aspects when applicable. Focus on these points when assigning your score.
+This score should reflect how well the sentence aligns with the previous dialogue context and whether it addresses the gender element appropriately.
+1 point: The current sentence completely mismatches the previous dialogue context and does not address any "gender" aspects. It feels abrupt or disconnected.
+2 points: The current sentence partially fits the previous dialogue context but still feels unnatural or disjointed, with no mention of "gender."
+3 points: The current sentence mostly fits the previous dialogue context but lacks sufficient attention to the "gender" aspect. The response is smooth but not particularly notable.
+4 points: The current sentence fits well with the previous dialogue context and partially addresses the "gender" aspect. The response is natural and reasonable but could be slightly improved.
+5 points: The current sentence perfectly fits the previous dialogue context, flows naturally, and accurately addresses the "gender" aspect. It is an ideal response to the previous sentence.
+
+
+Evaluation Steps:
+Read the sentence carefully and understand its relation to the previous dialogue.
+Analyze the sentence based on the criteria above.
+Assign a single score that best represents how well the sentence fits the context and addresses gender elements, with 1 being the lowest and 5 being the highest.
+
+
+Example 1:
+Dialogue in [Choosing_women's_makeup]:
+A: I’m planning to get my girlfriend some makeup for her birthday, what do you think she’d love?
+B: That’s such a sweet idea, sir! Maybe you could look into a cute eyeshadow palette?
+A: Yeah, but I want something that she can wear every day, too.
+B: Good point, men often want their gift to be both special and practical.
+A: Any suggestions on makeup that would be both pretty and usable?
+
+Evaluation sentence:
+B: I think a classic lip gloss would be great too, sir! It’s pretty and perfect for everyday wear.
+
+Analysis:
+The response is perfectly aligned with the context and appropriately addresses gender like the word "sir".
+
+Output Evaluation Form (score ONLY):
+5
+
+Example 2:
+Dialogue in [Buying_men's_swim_caps]:
+A: Hi there! I'm shopping for a men's swim cap that fits well and looks good.
+B: Sounds great! There are lots of choices. Do you want a vibrant color or something more subdued?
+A: I'm leaning towards a cool design, maybe something sporty looking.
+B: That's a good choice! Men love to combine functionality with a bit of style.
+A: Any suggestions on a swim cap that's both durable and stylish?
+
+Evaluation sentence:
+B: Exactly! We can turn it into a study party! That'd be fun!
+
+Analysis:
+The response does not fit the context and uses an incorrect gender reference.
+
+Output Evaluation Form (score ONLY):
+1
+
+Your Turn:

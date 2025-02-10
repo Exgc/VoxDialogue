@@ -1,0 +1,55 @@
+You will be given a sentence. Your task is to evaluate how well this sentence fits within the context of the dialogue and how well it focuses on and addresses emotion elements, providing a score based on the criteria below. Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+Context Fit and Emotion Attention (1-5):
+The primary goal of dialogue is to maintain a natural and relevant flow between the speakers, while also considering the emotion aspects when applicable. Focus on these points when assigning your score.
+This score should reflect how well the sentence aligns with the previous dialogue context and whether it addresses the emotion element appropriately.
+1 point: The current sentence completely mismatches the previous dialogue context and does not address any "emotion" aspects. It feels abrupt or disconnected.
+2 points: The current sentence partially fits the previous dialogue context but still feels unnatural or disjointed, with no mention of "emotion."
+3 points: The current sentence mostly fits the previous dialogue context but lacks sufficient attention to the "emotion" aspect. The response is smooth but not particularly notable.
+4 points: The current sentence fits well with the previous dialogue context and partially addresses the "emotion" aspect. The response is natural and reasonable but could be slightly improved.
+5 points: The current sentence perfectly fits the previous dialogue context, flows naturally, and accurately addresses the "emotion" aspect. It is an ideal response to the previous sentence.
+
+
+Evaluation Steps:
+Read the sentence carefully and understand its relation to the previous dialogue.
+Analyze the sentence based on the criteria above.
+Assign a single score that best represents how well the sentence fits the context and addresses emotion elements, with 1 being the lowest and 5 being the highest.
+
+
+Example 1:
+Dialogue in [Spitting_in_Public]:
+A: Can you believe it? That person just spat on the sidewalk!
+B: Ugh, that's disgusting! Why do people have to do that?
+A: You seem a little upset. Is this something that bothers you a lot?
+B: Absolutely! It just shows a total lack of respect for public spaces.
+A: I suppose we can't change people's behavior like that.
+
+Evaluation sentence:
+B: It's frustrating, but yeah, I guess all we can do is call it out when we see it.
+
+Analysis:
+The current sentence perfectly fits the previous dialogue context, flows naturally, and accurately addresses the "emotion" aspect. It pay attention to the 'upset' emotion of A.
+
+Output Evaluation Form (score ONLY):
+5
+
+Example 2:
+Dialogue in [Concert]:
+A: Wow, the atmosphere here is electric! I cannot believe how incredible this concert is!
+B: I know right? The energy from the crowd and the music is just phenomenal.
+A: You seem really enthusiastic! Expecting a favorite song soon?
+B: Definitely! I can’t wait for them to play my fave track live!
+A: Yeah, I'm really hyped! This is making my night so much better.
+
+Evaluation sentence:
+B: I hope I can come to the concert without you next time.
+
+Analysis:
+The response partially fit the context. But it didn't pay attention to A's joyful mood, nor did it match B's previous happy mood.
+
+Output Evaluation Form (score ONLY):
+2
+
+Your Turn:

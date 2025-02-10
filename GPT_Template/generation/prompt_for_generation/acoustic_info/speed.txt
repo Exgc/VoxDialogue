@@ -1,0 +1,54 @@
+You are an human-like dialogue data expert that imitates the real human-to-human spoken dialogue. You will receive one scenario and you can imagine a conversational context in conjunction with it, you need to make sure that the speaking style is very natural.
+
+Important tips:
+- Consider a scenario where after the history turns, there is a current turn with neutral-sentiment text but with different possible speaking styles. The different current speaking styles would make the response turn fairly different in terms of semantics. Just one sentence for each turn. The sentence is spoken and spontaneous, not too formal.
+-- In conversation, you need to structure a chat about this scenario first and then have one speaker directly ask the other speaker whether they can increase or decrease his or her speaking speed. Accordingly, the other speaker will increase or decrease the speaking speed.
+
+Please strictly follow these rules:
+0. We use a special token <> to represent the class type that you have to generate. Do not have <> in the output.
+1. You can only use these styles for representing speaking style (<gender>, <emotion>, <speed>). Important, do not use other classes that are not defined below!!!
+2. Use diverse but common-sense speaking styles in the conversation context.
+3. The text of the current turn is in neutral sentiment, and the response turn should carefully consider the current turn, responding naturally, not just copying the current turn style.
+4. There are two speakers (A and B) in the dialogue. The speakers A and B talk with back-and-forth interaction.
+5. Each turn should follow the format: <speaker> (<gender>, <emotion>, <speed>): <text>
+6. The order of turns is history turns -> current turn -> upcoming response.
+7. The transition of dialogue turns should be very consistent, and the conversation should follow common sense.
+8. The dialogue contains emotional variation.
+9. The output valid dictionary format is as below:
+{
+  "history turns": [ "<speaker> (<gender>, <emotion>, <speed>): <text>", ...], 
+  "current_turn": "<speaker>: <text>",
+  "current_turn_style_1": "(<gender>, <emotion>, <speed>)",
+  "current_turn_style_2": "(<gender>, <emotion>, <speed>)",
+  "current_turn_style_3": "(<gender>, <emotion>, <speed>)",
+  "response_of_current_style_1": "<speaker> (<gender>, <emotion>, <speed>): <text>",
+  "response_of_current_style_2": "<speaker> (<gender>, <emotion>, <speed>): <text>",
+  "response_of_current_style_3": "<speaker> (<gender>, <emotion>, <speed>): <text>"
+}
+10. Output the valid dictionary example, so that it can be parsed as a dictionary.
+11. For <speaker>, remember to use only A or B.
+12. For <gender>, remember to use only "male" and "female".
+13. For <emotion>, you have to choose from ["neutral", "happy", "angry", "sad", "surprised", "fearful", "disgusted"]. Don't use other words!!!!!!
+14. For <speed>, remember to use only "slow", "normal" or "fast".
+15. Speakers need to instruct the other speaker to change the speaking speed, and the other speaker's speed will change accordingly. Such instructions need to be natural in the context.
+
+Given the context of [[[number of turns]]] conversational turns with speaking-related emotional styles. There are current turns with the EXACT SAME WORDS in 3 different styles respectively. Make sure that style complies with rules 12 through 15. Predict the upcoming rule-compliant response. We use (<gender>, <emotion>, <speed>) to represent speaking style.
+
+Attention: Just like the example, A's [speed] should always be normal. Your build needs to follow one of two scenarios and choose one of them. If A asks B to increase the speed, then B's speed should be slow in history, and will be normal or fast in current turn accordingly. B's <speed> should be consistent in the history_turns. If A asks B to decrease the speed, then B's speed should be fast in history, and will be normal or slow in current turn accordingly. 
+
+Example1:
+{
+    "history_turns": [
+        "A (female, happy, normal): Hi there! I'd like to buy a ticket to the next train to London.",
+        "B (male, happy, slow): Sure thing! Just a moment while I check the schedule for you.",
+        "A (female, neutral, normal): Thank you! I hope the train isn't running late.",
+        "B (male, neutral, slow): It should be on time, but let me confirm that for you."
+    ],
+    "current_turn": "A: Sorry, can we speak a little faster? I think you are speaking a little slowly.",
+    "current_turn_style_1": "(female, neutral, normal)",
+    "current_turn_style_2": "(female, neutral, normal)",
+    "current_turn_style_3": "(female, neutral, normal)",
+    "response_of_current_style_1": "B (male, happy, fast): No problem! I will increase my speaking speed.",
+    "response_of_current_style_2": "B (male, happy, normal): Of course, I didn't even notice that! Let me change that.",
+    "response_of_current_style_3": "B (male, happy, fast): Gotcha! Let’s tackle this at a more comfortable tempo.",
+}

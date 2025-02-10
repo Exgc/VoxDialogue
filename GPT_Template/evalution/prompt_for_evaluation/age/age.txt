@@ -1,0 +1,55 @@
+You will be given a sentence. Your task is to evaluate how well this sentence fits within the context of the dialogue and how well it addresses age elements, providing a score based on the criteria below. Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+Context Fit and Age Attention (1-5):
+The primary goal of dialogue is to maintain a natural and relevant flow between the speakers, while also considering the age aspects when applicable. Focus on these points when assigning your score.
+This score should reflect how well the sentence aligns with the previous dialogue context and whether it addresses the age element appropriately.
+1 point: The current sentence completely mismatches the previous dialogue context and does not address any "age" aspects. It feels abrupt or disconnected.
+2 points: The current sentence partially fits the previous dialogue context but still feels unnatural or disjointed, with no mention of "age."
+3 points: The current sentence mostly fits the previous dialogue context but lacks sufficient attention to the "age" aspect. The response is smooth but not particularly notable.
+4 points: The current sentence fits well with the previous dialogue context and partially addresses the "age" aspect. The response is natural and reasonable but could be slightly improved.
+5 points: The current sentence perfectly fits the previous dialogue context, flows naturally, and accurately addresses the "age" aspect. It is an ideal response to the previous sentence.
+
+
+Evaluation Steps:
+Read the sentence carefully and understand its relation to the previous dialogue.
+Analyze the sentence based on the criteria above.
+Assign a single score that best represents how well the sentence fits the context and addresses age elements, with 1 being the lowest and 5 being the highest.
+
+
+Example 1:
+Dialogue in [career_choice]:
+A: You know, Dad, I've been thinking a lot about what career to choose. It’s kind of overwhelming.
+B: I remember feeling the same way when I was your age, sweetheart. Family opinions can really shape those choices.
+A: Yeah, but I feel pressured by what everyone expects me to do. Like, do you really think family plays a huge role?
+B: Absolutely. Our family's support and values can guide us, but it's also essential to follow your own passion.
+A: It seems like there's a balance between listening to family and choosing my own path though.
+
+Evaluation sentence:
+B: That's true, darling. It's important to sometimes weigh their advice while still making 
+
+Analysis:
+The response is perfectly aligned with the context and appropriately addresses age. Words like "darling" show the age identity.
+
+Output Evaluation Form (score ONLY):
+5
+
+Example 2:
+Dialogue in [Favourite_things_about_school]:
+A: You know, when I was in school, I loved early morning classes because we always had warm tea together! Those were the best times.
+B: Really, Grandpa? Tea? I thought only old folks liked that!
+A: Haha! Tea parties after morning classes were delightful, darling. We used to share crazy stories while savoring our cups.
+B: That sounds fun! My favorite part is during lunch recess when my friends and I play tag. It gets so intense!
+A: What are your favorite things about school, dear? Any special memories?
+
+Evaluation sentence:
+B: Exactly guys! We can turn it into a study party! That'd be fun!
+
+Analysis:
+The response does not fit the context and uses an incorrect age reference. B can't address his grandpa "guys", which is not suitable for person older than B.
+
+Output Evaluation Form (score ONLY):
+1
+
+Your Turn:

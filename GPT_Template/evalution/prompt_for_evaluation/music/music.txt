@@ -1,0 +1,54 @@
+You will be given a sentence. Your task is to evaluate how well this sentence fits within the context of the dialogue before and how well it is natural and fluent, providing a score based on the criteria below. Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+Context Fit and Naturalness (1-5):
+The primary goal of dialogue is to maintain a natural and relevant flow between the speakers. Focus on these points when assigning your score.
+1 point: The current sentence completely mismatches the previous dialogue context and feels abrupt, disconnected, and highly unnatural.
+2 points: The current sentence has a weak connection to the previous dialogue, with a somewhat logical transition, but feels awkward and noticeably breaks the flow or coherence.
+3 points: The current sentence has a moderate connection to the previous dialogue, with some logical gaps, and while the conversation is mostly coherent, the sentence feels slightly forced or less fluid.
+4 points: The current sentence fits well with the previous dialogue, follows a logical flow, and although the conversation is coherent and mostly natural, there may be minor issues with smoothness.
+5 points: The current sentence perfectly aligns with the previous dialogue, maintaining a clear and logical connection, and the conversation is seamless, feeling completely natural and fluent.
+
+
+Evaluation Steps:
+Read the sentence carefully and understand its relation to the previous dialogue.
+Analyze the sentence based on the criteria above.
+Assign a single score that best represents how well the sentence fits the context and keeps the conversation fluent and natural, with 1 being the lowest and 5 being the highest.
+
+
+Example 1:
+Dialogue in ['amateur recording', 'two acoustic guitars', 'flamenco', 'nylon string guitar', 'technically challenging', 'sloppy']:
+A: Hey, did you hear that amateur recording that has two acoustic guitars playing flamenco?
+B: Yeah! I loved how those nylon string guitars really set the mood!
+A: It's technically challenging for sure, and some parts felt a bit sloppy to me.
+B: I thought the imperfections gave it a unique charm!
+A: I wonder if the musicians are experienced or just diving into something challenging.
+
+Evaluation sentence:
+B: That's an interesting point; I really want to know more about them.
+
+Analysis:
+The current sentence perfectly aligns with the previous dialogue, maintaining a clear and logical connection, and the conversation is seamless, feeling completely natural and fluent.
+
+Output Evaluation Form (score ONLY):
+5
+
+Example 2:
+Dialogue in ['male voice', 'electric guitar', 'distortion effect', 'drums', 'synth bass', 'pop rock genre']:
+A: Wow, did you hear that male voice in the song? It just stands out perfectly.
+B: Absolutely! And that electric guitar adds such an edge to the whole vibe.
+A: Right? The distortion effect gives it that extra punch; I love it!
+B: yes, and those drums really keep the energy going throughout the track!
+A: The synth bass is pretty captivating too, wouldn't you agree?
+
+Evaluation sentence:
+B: I hope I can come to the concert without you next time.
+
+Analysis:
+The current sentence completely mismatches the previous dialogue context and feels abrupt, disconnected, and highly unnatural.
+
+Output Evaluation Form (score ONLY):
+1
+
+Your Turn:
