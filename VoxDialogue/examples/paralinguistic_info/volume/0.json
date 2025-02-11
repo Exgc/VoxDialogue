@@ -1,0 +1,50 @@
+[
+    {
+        "history_turns": [
+            "A (female, happy, normal): Wow, I can't believe how intense this practice is today!",
+            "B (male, neutral, normal): Yeah, the team's really going all out. You can barely hear the whistles!",
+            "A (female, surprised, normal): I know! It’s like everyone’s fired up! How do you think they’re doing?",
+            "B (male, neutral, loud): Honestly, they’re doing great! It feels like a competition out there!"
+        ],
+        "current_turn": "A: Could you lower your voice a bit for me?",
+        "current_turn_style_1": "(female, neutral, normal)",
+        "current_turn_style_2": "(female, neutral, normal)",
+        "current_turn_style_3": "(female, neutral, normal)",
+        "response_of_current_style_1": "B (male, neutral, normal): Of course! I’ll keep it down. Is this better?",
+        "response_of_current_style_2": "B (male, neutral, normal): Sure thing! I can do that! How's this volume for you?",
+        "response_of_current_style_3": "B (male, neutral, normal): Alright, I’ll tone it down a bit. How does that sound?",
+        "aspect_list": "Noisy outdoor sports field during practice"
+    },
+    {
+        "history_turns": [
+            "A (female, happy, normal): It’s so exciting to watch everyone practicing out here!",
+            "B (male, neutral, loud): I know, right? The atmosphere is electrifying with all the commotion.",
+            "A (female, happy, normal): Definitely! Look at those players giving it their all!",
+            "B (male, neutral, loud): It's incredible to see. Their energy is contagious!"
+        ],
+        "current_turn": "A: Can you lower your voice a bit? It's really loud out here.",
+        "current_turn_style_1": "(female, neutral, normal)",
+        "current_turn_style_2": "(female, neutral, normal)",
+        "current_turn_style_3": "(female, neutral, normal)",
+        "response_of_current_style_1": "B (male, neutral, normal): Of course! I'll speak more softly now, is this alright?",
+        "response_of_current_style_2": "B (male, neutral, normal): No problem! I’ll be quieter... how does this work for you?",
+        "response_of_current_style_3": "B (male, neutral, normal): Sure thing, I’ll tone it down a bit for you. Better like this?",
+        "aspect_list": "Noisy outdoor sports field during practice"
+    },
+    {
+        "history_turns": [
+            "A (female, happy, normal): It's such a beautiful day for practice, isn't it?",
+            "B (male, neutral, loud): Absolutely! The energy around here is really motivating!",
+            "A (female, surprised, normal): Oh wow, I didn't expect this many people to show up!",
+            "B (male, neutral, loud): Right? They all seemed eager to join in and give it their all!"
+        ],
+        "current_turn": "A: Could you lower your voice a bit for me?",
+        "current_turn_style_1": "(female, neutral, normal)",
+        "current_turn_style_2": "(female, neutral, normal)",
+        "current_turn_style_3": "(female, neutral, normal)",
+        "response_of_current_style_1": "B (male, neutral, normal): Sure thing! I’ll tone it down a bit. How's this?",
+        "response_of_current_style_2": "B (male, neutral, normal): Of course! I can lower it! Is this more comfortable for you?",
+        "response_of_current_style_3": "B (male, neutral, normal): Alright, I’ll keep it down. Let me know if you need it quieter!",
+        "aspect_list": "Noisy outdoor sports field during practice"
+    }
+]

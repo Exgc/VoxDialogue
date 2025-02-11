@@ -1,0 +1,50 @@
+[
+    {
+        "history_turns": [
+            "A (male, happy, normal, low): I’m planning to get my girlfriend some makeup for her birthday, what do you think she’d love?",
+            "B (female, happy, normal, high): That’s such a sweet idea, sir! Maybe you could look into a cute eyeshadow palette?",
+            "A (male, neutral, normal, low): Yeah, but I want something that she can wear every day, too.",
+            "B (female, neutral, normal, high): Good point, men often want their gift to be both special and practical."
+        ],
+        "current_turn": "A: Any suggestions on makeup that would be both pretty and usable?",
+        "current_turn_style_1": "(male,  neutral,  normal,  low)",
+        "current_turn_style_2": "(male,  neutral,  fast,  low)",
+        "current_turn_style_3": "(male,  neutral,  slow,  low)",
+        "response_of_current_style_1": "B (female, happy, normal, high): Absolutely, sir! A versatile blush is gorgeous and can be used daily, what do you think?",
+        "response_of_current_style_2": "B (female, neutral, fast, normal): I think a classic lip gloss would be great too, sir! It’s pretty and perfect for everyday wear.",
+        "response_of_current_style_3": "B (female, neutral, slow, high): How about looking for a natural-looking foundation, sir? Those are truly practical and give a beautiful finish.",
+        "aspect_list": "Choosing women's makeup"
+    },
+    {
+        "history_turns": [
+            "A (male, happy, normal, low): I'm thinking of helping my girlfriend pick the perfect makeup for her next event.",
+            "B (female, happy, normal, normal): That's so thoughtful of you, sir! What kind of vibe is she going for?",
+            "A (male, neutral, normal, low): She’s leaning towards something elegant yet natural, you know?",
+            "B (female, neutral, normal, high): I see, many women prefer a classy look without overdoing it at events."
+        ],
+        "current_turn": "A: Any thoughts on what she might want to try?",
+        "current_turn_style_1": "(male,  neutral,  normal,  low)",
+        "current_turn_style_2": "(male,  neutral,  fast,  low)",
+        "current_turn_style_3": "(male,  neutral,  slow,  low)",
+        "response_of_current_style_1": "B (female, happy, normal, high): Absolutely, sir! A soft contour and a pretty lip color could really highlight her features!",
+        "response_of_current_style_2": "B (female, neutral, fast, normal): Sure! She might love a light foundation with a natural finish, perfect for a chic look, right?",
+        "response_of_current_style_3": "B (female, neutral, slow, high): Well, you could suggest that she goes for some rosy blush; that usually connects nicely with elegant outfits, sir.",
+        "aspect_list": "Choosing women's makeup"
+    },
+    {
+        "history_turns": [
+            "A (male, neutral, normal, low): I'm considering buying some new makeup for a couple of upcoming events. Any suggestions?",
+            "B (female, happy, normal, high): Absolutely! What kind of look are you going for? Something glamorous, perhaps?",
+            "A (male, neutral, fast, low): Yeah, something that stands out but isn't too over the top, you know?",
+            "B (female, neutral, normal, high): I get it, men often want a look that’s eye-catching yet handsome."
+        ],
+        "current_turn": "A: Any suggestions on something that's easy to apply but still looks great?",
+        "current_turn_style_1": "(male,  neutral,  normal,  low)",
+        "current_turn_style_2": "(male,  neutral,  fast,  low)",
+        "current_turn_style_3": "(male,  neutral,  slow,  low)",
+        "response_of_current_style_1": "B (female, happy, normal, high): Of course, sir! A simple BB cream could be perfect; it's easy to apply and gives a nice finish for men's skin.",
+        "response_of_current_style_2": "B (female, neutral, fast, normal): Oh, definitely! You should try a tinted moisturizer; it’s super easy for men to use and looks quite attractive!",
+        "response_of_current_style_3": "B (female, neutral, slow, high): Well, sir, I’d suggest starting with a good concealer as well; it's handy for men to cover any imperfections while looking great.",
+        "aspect_list": "Choosing women's makeup"
+    }
+]

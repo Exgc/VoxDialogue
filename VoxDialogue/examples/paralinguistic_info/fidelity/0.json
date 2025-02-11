@@ -1,0 +1,50 @@
+[
+    {
+        "history_turns": [
+            "A (female, happy, normal, good): Hey! I'm so excited about our road trip next weekend! Did you pick a route yet?",
+            "B (male, neutral, normal, bad): Yeah, I was thinking we could take the scenic route through the national park. But, I'm stuck here on the road for a bit.",
+            "A (female, happy, fast, good): That sounds perfect! I can't wait to hit all those stopping points for pictures!",
+            "B (male, happy, slow, bad): Exactly! The mountain views are gonna be amazing, even if there’s some traffic."
+        ],
+        "current_turn": "A: Also, why does your audio sound a little off right now?",
+        "current_turn_style_1": "(female, neutral, normal, good)",
+        "current_turn_style_2": "(female, neutral, fast, good)",
+        "current_turn_style_3": "(female, neutral, slow, good)",
+        "response_of_current_style_1": "B (male, neutral, normal, bad): Oh, I'm on a stretch of road with limited signal; it's making it hard to keep the call clear.",
+        "response_of_current_style_2": "B (male, neutral, fast, bad): I think my signal is pretty weak out here since I'm surrounded by hills, so it sounds rough!",
+        "response_of_current_style_3": "B (male, neutral, slow, bad): Honestly, I'm right near a few metal structures that mess with my reception a lot, I'm kind of stuck.",
+        "aspect_list": "Road trip plans"
+    },
+    {
+        "history_turns": [
+            "A (female, happy, normal, good): Hey! I can't believe the road trip is just around the corner! Are you excited?",
+            "B (male, happy, normal, bad): Absolutely! I’ve been looking forward to this for ages. Are we still on for Monday?",
+            "A (female, happy, fast, good): For sure! Got the map all set, can't wait to hit the road!",
+            "B (male, neutral, slow, bad): That sounds amazing! I just hope we have smooth sailing and no hiccups along the way."
+        ],
+        "current_turn": "A: By the way, why does your audio sound kinda iffy right now?",
+        "current_turn_style_1": "(female, neutral, normal, good)",
+        "current_turn_style_2": "(female, neutral, fast, good)",
+        "current_turn_style_3": "(female, neutral, slow, good)",
+        "response_of_current_style_1": "B (male, neutral, normal, bad): It’s probably the reception; I'm at a spot with terrible signals right now.",
+        "response_of_current_style_2": "B (male, neutral, fast, bad): I think the signals here by the lake are pretty weak, it's so frustrating!",
+        "response_of_current_style_3": "B (male, neutral, slow, bad): You know, I believe I'm just in a bad luck signal zone, can't do much to fix it.",
+        "aspect_list": "Road trip plans"
+    },
+    {
+        "history_turns": [
+            "A (female, happy, normal, good): Hey! I'm so excited about our road trip tomorrow! Do you have everything packed yet?",
+            "B (male, neutral, normal, bad): Yeah, I'm almost done, just need to grab a couple more snacks. What about the playlist?",
+            "A (female, happy, fast, good): I’ve put together a great mix of songs! It’s going to be a blast on the road.",
+            "B (male, happy, slow, bad): Good, can't wait! Let’s hope we hit the road without any snags!"
+        ],
+        "current_turn": "A: By the way, why does your audio sound so hazy right now?",
+        "current_turn_style_1": "(female, neutral, normal, good)",
+        "current_turn_style_2": "(female, neutral, fast, good)",
+        "current_turn_style_3": "(female, neutral, slow, good)",
+        "response_of_current_style_1": "B (male, neutral, normal, bad): I think it's just a bad cell signal; I'm in a pretty weak area right now.",
+        "response_of_current_style_2": "B (male, neutral, fast, bad): Yeah, it looks like I'm in a bad area; the signal here isn’t great at all!",
+        "response_of_current_style_3": "B (male, neutral, slow, bad): Honestly, I should’ve picked a better spot because the reception here is just terrible.",
+        "aspect_list": "Road trip plans"
+    }
+]

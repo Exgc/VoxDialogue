@@ -1,0 +1,54 @@
+[
+    {
+        "history_turns": [
+            "A (male, happy, 75): You know, nurturing good shopping habits really made my life easier back in the day, sweet pea.",
+            "B (female, surprised, 20): Really? What do you mean, Grandpa? Shopping seems so effortless these days with all the online options!",
+            "A (male, happy, 75): Oh dear, let me tell you, we didn’t have tech to back us up! It was all about hunting for the best deals in stores every weekend!",
+            "B (female, neutral, 20): That does sound kind of exciting. I usually just scroll through apps for clothes and everything ends up being a click away."
+        ],
+        "current_turn": "A: Do you think shopping was more enjoyable back then or now, dear?",
+        "current_turn_style_1": "(male, neutral, 75)",
+        "current_turn_style_2": "(male, neutral, 75)",
+        "current_turn_style_3": "(male, neutral, 75)",
+        "response_of_current_style_1": "B (female, happy, 20): Oh, for sure it was exciting to search stores in person! Maybe I should try that sometime with you, Grandpa!",
+        "response_of_current_style_2": "B (female, neutral, 20): It's definitely different, but I guess maintaining those habits is good too.",
+        "response_of_current_style_3": "B (female, surprised, 20): Wow, I never thought about it that way, Grandpa! Do you think it would be fun to shop together next time?",
+        "aspect_list": "Shopping habits"
+    },
+    {
+        "history_turns": [
+            "A (male, happy, 75): You know, back in my day, shopping was such an event! We'd stroll through the market, chatting with all the vendors.",
+            "B (female, surprised, 20): Really, Grandpa? That sounds so different from just ordering things online in a few clicks.",
+            "A (male, happy, 75): Oh, it was much more personal! I remember picking out fresh fruits and having a nice conversation with the people selling them.",
+            "B (female, neutral, 20): I can imagine that. Sometimes I enjoy going to the thrift stores for one-of-a-kind finds, though that's not quite the same."
+        ],
+        "current_turn": "A: How do you feel about the way shopping has changed these days, darling? Seems so quick yet less personal.",
+        "current_turn_style_1": "(male, neutral, 75)",
+        "current_turn_style_2": "(male, neutral, 75)",
+        "current_turn_style_3": "(male, neutral, 75)",
+        "response_of_current_style_1": "B (female, happy, 20): I like the quickness! But I still miss spending afternoons wandering through local shops.",
+        "response_of_current_style_2": "B (female, neutral, 20): I guess it’s different. I like the convenience, though chatting with store owners does sound nice.",
+        "response_of_current_style_3": "B (female, surprised, 20): Wow, Granddad, you really think shopping could've been more enjoyable? I'm starting to wonder what I’m missing out on!",
+        "aspect_list": "Shopping habits"
+    },
+    {
+        "history_turns": [
+            "A (male, happy, 72): Back in my day, I would walk to the local shop just to buy a packet of biscuits. Times were simpler, my darling.",
+            "B (female, surprised, 18): Really, Grandpa? That sounds interesting! I can barely imagine walking anywhere now with my online shopping.",
+            "A (male, happy, 72): Oh yes, we didn't have the internet then. Just good old fashion shopping! I loved bumping into my neighbors.",
+            "B (female, neutral, 18): That’s kind of neat, Grandpa! It must feel nice to have such personal connections.",
+            "A (male, happy, 72): It truly was. We even chatted about the weather while picking vegetables!",
+            "B (female, neutral, 18): You would probably get along well with my classmates since they’re always talking about trends and brands.",
+            "A (male, happy, 72): Nowadays, I hear online shopping makes it so easy, but I really miss the camaraderie at the market.",
+            "B (female, neutral, 18): For sure, it changes the whole experience when you're sitting at home clicking away, not talking to anyone."
+        ],
+        "current_turn": "A: Do you ever think trying local shops would be worth it, darling? It sure had its charm.",
+        "current_turn_style_1": "(male, neutral, 72)",
+        "current_turn_style_2": "(male, neutral, 72)",
+        "current_turn_style_3": "(male, neutral, 72)",
+        "response_of_current_style_1": "B (female, happy, 18): Totally, Grandpa! I’d love to explore, especially if there are cute boutiques!",
+        "response_of_current_style_2": "B (female, neutral, 18): Hmmm, maybe? I probably should check them out at least once.",
+        "response_of_current_style_3": "B (female, surprised, 18): That could be fun, Grandpa! Are the shops having special deals like online stores?",
+        "aspect_list": "Shopping habits"
+    }
+]

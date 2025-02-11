@@ -1,19 +1,29 @@
-# VoxDialogue
+# VoxBench
 
-- [x] acoustic_information
-  - [x] Volume @
-  - [x] Non-verbal Expressions @
-  - [x] Emotion 
-  - [x] Fidelity @(jingyu 加工)
-  - [x] Speed @(jingyu 加工)
-  - [x] Stress
-- [ ] speaker identity
-  - [x] age (@Exgc)
-  - [x] gender
-  - [ ] accent ()
-  - [x] language
+## VoxDialogue(DataSet)
 
-## Install
+### Attribute Example
+- ***Speaker Information***
+
+  | **Attribute** | **Example** |
+  |---------------|-------------|
+  | Gender        |             |
+  | Age           |             |
+  | Language      |             |
+  | Accent        |             |
+
+- ***Paralinguistic Information***
+    
+  | **Attribute** | **Example** |
+  |---------------|-------------|
+  | Gender        |             |
+  | Age           |             |
+  | Language      |             |
+  | Accent        |             |
+
+### Dialogue Dataset Generation
+
+#### Install
 
 **Clone and install**
 
@@ -64,4 +74,13 @@ First, add `third_party/Matcha-TTS` to your `PYTHONPATH`.
 ``` sh
 export PYTHONPATH=third_party/Matcha-TTS
 ```
+
+
+## Acknowledge
+
+1. We borrowed a lot of code from [FunASR](https://github.com/modelscope/FunASR).
+2. We borrowed a lot of code from [FunCodec](https://github.com/modelscope/FunCodec).
+3. We borrowed a lot of code from [Matcha-TTS](https://github.com/shivammehta25/Matcha-TTS).
+4. We borrowed a lot of code from [AcademiCodec](https://github.com/yangdongchao/AcademiCodec).
+5. We borrowed a lot of code from [WeNet](https://github.com/wenet-e2e/wenet).
 

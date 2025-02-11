@@ -1,0 +1,50 @@
+[
+    {
+        "history_turns": [
+            "A (female, neutral, normal, normal): It’s kind of eerie being without power like this.",
+            "B (male, neutral, normal, low): Yeah, our street seems completely dark.",
+            "A (female, fearful, fast, normal): You seem anxious about it. Is everything okay?",
+            "B (male, sad, slow, low): I just don’t like being in the dark, it makes me feel uneasy."
+        ],
+        "current_turn": "A: It’s definitely unsettling.",
+        "current_turn_style_1": "(female,  neutral,  slow,  low)",
+        "current_turn_style_2": "(female,  sad,  fast,  loud)",
+        "current_turn_style_3": "(female,  surprised,  normal,  normal)",
+        "response_of_current_style_1": "B (male, neutral, slow, low): Yeah, it really is. But hopefully it won't last long.",
+        "response_of_current_style_2": "B (male, sad, normal, loud): I know what you mean, I just hope we get some light soon.",
+        "response_of_current_style_3": "B (male, surprised, fast, normal): Seriously! I didn’t expect this to last so long.",
+        "aspect_list": "Power Outage"
+    },
+    {
+        "history_turns": [
+            "A (female, neutral, normal, normal): Can you believe there’s a power outage again? It’s so inconvenient.",
+            "B (male, angry, fast, loud): I know, right? It feels like it’s happening every month now!",
+            "A (female, sad, slow, low): You seem really upset about this. Is it just the outage that’s bothering you?",
+            "B (male, angry, normal, normal): It's more than the outage... I had plans tonight, everything gets messed up!"
+        ],
+        "current_turn": "A: I really get that.",
+        "current_turn_style_1": "(female,  happy,  fast,  loud)",
+        "current_turn_style_2": "(female,  neutral,  normal,  normal)",
+        "current_turn_style_3": "(female,  sad,  slow,  low)",
+        "response_of_current_style_1": "B (male, happy, normal, normal): I appreciate it! Let's find a way to make the best of it!",
+        "response_of_current_style_2": "B (male, neutral, fast, loud): Yeah, it’s such a hassle. Hopefully, it gets resolved soon.",
+        "response_of_current_style_3": "B (male, sad, slow, low): Thanks for understanding. It’s frustrating to lose plans like that.",
+        "aspect_list": "Power Outage"
+    },
+    {
+        "history_turns": [
+            "A (female, neutral, normal, normal): Wow, the power's out! Do you have any flashlights?",
+            "B (male, sad, slow, low): No, I can't find any! It’s really unsettling.",
+            "A (female, neutral, normal, normal): I get that. It's pretty dark in here.",
+            "B (male, angry, fast, loud): I hate how this always happens. Why can't they keep the power on?"
+        ],
+        "current_turn": "A: This is really inconvenient.",
+        "current_turn_style_1": "(female,  neutral,  normal,  normal)",
+        "current_turn_style_2": "(female,  sad,  slow,  low)",
+        "current_turn_style_3": "(female,  angry,  fast,  loud)",
+        "response_of_current_style_1": "B (male, neutral, normal, normal): Yeah, totally inconvenient. I wish they would fix it already.",
+        "response_of_current_style_2": "B (male, sad, slow, low): I know, it seems like everything is going wrong right now. Are you alright?",
+        "response_of_current_style_3": "B (male, angry, fast, loud): I feel you! It's infuriating! Why can't they get their act together?",
+        "aspect_list": "Power Outage"
+    }
+]

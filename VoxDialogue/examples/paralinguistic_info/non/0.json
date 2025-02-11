@@ -1,0 +1,47 @@
+[
+    {
+        "history_turns": [
+            "A (female, happy): So, did you hear about Lucy's new goal? She's aiming for a fitness competition!",
+            "B (male, surprised): Wow, that's amazing! I never thought she'd want to compete!",
+            "A (female, happy): I know, right? She's even started following a training plan.",
+            "B (male, happy): That's fantastic! I should definitely start working out with her."
+        ],
+        "current_turn_style_1": "A (female, happy) [laughter] I mean, who would've thought Lucy would dive in so deep with this fitness thing?",
+        "current_turn_style_2": "A (female, happy) So, [laughter] can you believe Lucy is actually getting serious about her fitness goals now?",
+        "current_turn_style_3": "A (female, happy) Can you believe that [laughter]? Lucy's all in on this fitness competition thing!",
+        "response_of_current_style_1": "B (male, happy): I know! [laughter] It's like she transformed overnight into a fitness fanatic!",
+        "response_of_current_style_2": "B (male, happy): Right? [laughter] It’s kind of surreal watching her get all pumped up about it!",
+        "response_of_current_style_3": "B (male, happy): I mean, [laughter] remember when she used to dread workouts? Talk about a plot twist!",
+        "aspect_list": "Talking about a friend's new fitness goal"
+    },
+    {
+        "history_turns": [
+            "A (female, happy): Did you hear about Sarah's new goal? She's planning to do a triathlon!",
+            "B (male, surprised): Wait, really? I never thought she'd take up something so intense!",
+            "A (female, happy): I know! She's already started her training—it's impressive!",
+            "B (male, neutral): It's a big step for her, but I believe she can actually do it!"
+        ],
+        "current_turn_style_1": "A (female, happy) [laughter] And get this, she even bought a fancy new bike for it!",
+        "current_turn_style_2": "A (female, happy) So, [laughter] apparently she splurged on a super sleek bike already!",
+        "current_turn_style_3": "A (female, happy) Can you believe that [laughter]? She went and bought this top-of-the-line bike!",
+        "response_of_current_style_1": "B (male, happy): No way! [laughter] She's going all-in with that bike purchase!",
+        "response_of_current_style_2": "B (male, happy): Really? [laughter] She's getting serious about this, that's for sure!",
+        "response_of_current_style_3": "B (male, happy): Wow, [laughter] good for her! Looks like she's ready to take on the world!",
+        "aspect_list": "Talking about a friend's new fitness goal"
+    },
+    {
+        "history_turns": [
+            "A (female, happy): I'm so impressed with Kelly! She's decided to sign up for a triathlon.",
+            "B (male, happy): I know! I can't believe she's actually going through with it.",
+            "A (female, surprised): And she's already starting her training regime. I saw her running the other day!",
+            "B (male, happy): That's awesome! We've got to support her through this journey."
+        ],
+        "current_turn_style_1": "A (female, happy) [laughter] So, Kelly's already made her own workout playlist! Can you even imagine?",
+        "current_turn_style_2": "A (female, happy) Yeah, [laughter] hear this: Kelly has made her own workout playlist already! What a champ!",
+        "current_turn_style_3": "A (female, happy) Can you believe it? [laughter] Kelly has her own workout playlist up and running!",
+        "response_of_current_style_1": "B (male, happy): That's amazing! [laughter] I bet it's hilarious—I'm imagining her vibing mid-run!",
+        "response_of_current_style_2": "B (male, happy): Totally! [laughter] I can't wait to hear what’s on it—probably some pop anthems!",
+        "response_of_current_style_3": "B (male, happy): Wait, really? [laughter] That's so Kelly—she's probably got motivational hits blasting!",
+        "aspect_list": "Talking about a friend's new fitness goal"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "history_turns": [
+            "A (female, happy): I'm so excited for our family game night this weekend!",
+            "B (male, happy): Me too! I always look forward to these moments together.",
+            "A (female, neutral): What games do we have lined up for tonight?",
+            "B (male, neutral): I brought my favorite board game and some card games."
+        ],
+        "current_turn_style_1": "A (female, neutral) I'm really <stress> hoping </stress> we can try the new board game too.",
+        "current_turn_style_2": "A (female, neutral) I'm really hoping we can try the <stress> new </stress> board game too.",
+        "current_turn_style_3": "A (female, neutral) I'm really hoping we can try the new board game <stress> too </stress>.",
+        "response_of_current_style_1": "B (male, happy): Oh, absolutely! I've heard it's a lot of fun!",
+        "response_of_current_style_2": "B (male, surprised): Oh, that's exciting! What’s different about this new game?",
+        "response_of_current_style_3": "B (male, neutral): Sure, I think it’ll be interesting to check it out tonight.",
+        "aspect_list": "Family game nights"
+    },
+    {
+        "history_turns": [
+            "A (female, happy): I'm so excited for family game night! It’s been ages since we did this.",
+            "B (male, happy): Yeah! I was looking forward to challenging you in Scrabble!",
+            "A (female, neutral): I suppose we have to agree on the rules before we start.",
+            "B (male, neutral): Right, we don’t want any disagreements during the game."
+        ],
+        "current_turn_style_1": "A (female, neutral) We definitely <stress> need </stress> to settle the rules first.",
+        "current_turn_style_2": "A (female, neutral) We definitely need to <stress> settle </stress> the rules first.",
+        "current_turn_style_3": "A (female, neutral) We definitely need to settle the rules <stress> first </stress>.",
+        "response_of_current_style_1": "B (male, happy): Of course, we can't start without clear rules, right?",
+        "response_of_current_style_2": "B (male, surprised): Who knew you'd take the lead on the rules? Good call!",
+        "response_of_current_style_3": "B (male, neutral): Absolutely, let’s take a moment to sort everything out before playing.",
+        "aspect_list": "Family game nights"
+    },
+    {
+        "history_turns": [
+            "A (female, happy): I'm so excited for our family game night! It's been too long!",
+            "B (male, happy): I know, right? I can’t wait to see if I’m still the champion!",
+            "A (female, neutral): What games do you think we should play tonight?",
+            "B (male, neutral): I'm in the mood for something challenging this time."
+        ],
+        "current_turn_style_1": "A (female, neutral) I think we should <stress> try </stress> a new game tonight.",
+        "current_turn_style_2": "A (female, neutral) I think we should try a <stress> new </stress> game tonight.",
+        "current_turn_style_3": "A (female, neutral) I think we should try a new game <stress> tonight </stress>.",
+        "response_of_current_style_1": "B (male, happy): Oh, that sounds fun! I love trying something different!",
+        "response_of_current_style_2": "B (male, surprised): A new game? I wasn't expecting that. I'm in!",
+        "response_of_current_style_3": "B (male, neutral): Good idea, trying a new game could shake things up.",
+        "aspect_list": "Family game nights"
+    }
+]

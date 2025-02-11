@@ -1,0 +1,50 @@
+[
+    {
+        "history_turns": [
+            "A (female, happy, normal): Hi! I'm excited about my upcoming flight, but just wanted some assistance with check-in.",
+            "B (male, happy, fast): Of course! Happy to help. Have you already gotten your boarding pass?",
+            "A (female, neutral, normal): Yes, but I wasn't sure where to drop off my luggage once I arrive at the airport.",
+            "B (male, neutral, fast): No worries! When you get to the airport, just look for the baggage drop area – signs will be there to guide you."
+        ],
+        "current_turn": "A: Would you be okay with slowing down just a bit? I’m having a hard time keeping up.",
+        "current_turn_style_1": "(female, neutral, normal)",
+        "current_turn_style_2": "(female, neutral, normal)",
+        "current_turn_style_3": "(female, neutral, normal)",
+        "response_of_current_style_1": "B (male, happy, slow): Sure thing! I’ll take it down a notch for you now.",
+        "response_of_current_style_2": "B (male, neutral, slow): Absolutely, I can slow down my pace. Thanks for letting me know!",
+        "response_of_current_style_3": "B (male, happy, slow): No problem! I didn’t realize I was going too fast. Let’s try this pace.",
+        "aspect_list": "Airline assistance"
+    },
+    {
+        "history_turns": [
+            "A (female, happy, normal): Hi! Thanks for helping me find my lost bag!",
+            "B (male, happy, fast): Absolutely! I’ll do my best to track it down for you right away.",
+            "A (female, neutral, normal): I really appreciate it. It's important for me to have it back before my next flight.",
+            "B (male, neutral, fast): I totally understand, we’ll make that happen for you!"
+        ],
+        "current_turn": "A: Could you possibly slow down just a bit while you explain?",
+        "current_turn_style_1": "(female, neutral, normal)",
+        "current_turn_style_2": "(female, neutral, normal)",
+        "current_turn_style_3": "(female, neutral, normal)",
+        "response_of_current_style_1": "B (male, happy, slow): Sure thing, I'll try to speak a bit slow for you.",
+        "response_of_current_style_2": "B (male, happy, slow): Of course! I’ll ease up the speed – no problem at all.",
+        "response_of_current_style_3": "B (male, happy, slow): Absolutely, I didn’t realize I was talking so fast!",
+        "aspect_list": "Airline assistance"
+    },
+    {
+        "history_turns": [
+            "A (female, happy, normal): Hi there! I'm really excited about my upcoming flight to Paris.",
+            "B (male, happy, fast): That sounds amazing! Paris is such a beautiful city to visit.",
+            "A (female, neutral, normal): Yes, I've been looking forward to this trip for months.",
+            "B (male, neutral, fast): I can only imagine! What's your favorite thing about traveling?"
+        ],
+        "current_turn": "A: Could we possibly slow it down a bit when we talk?",
+        "current_turn_style_1": "(female, neutral, normal)",
+        "current_turn_style_2": "(female, neutral, normal)",
+        "current_turn_style_3": "(female, neutral, normal)",
+        "response_of_current_style_1": "B (male, happy, slow): No problem at all! I'm glad to adjust my pace for you.",
+        "response_of_current_style_2": "B (male, happy, slow): Sure! It's important we communicate clearly. Let's slow it down.",
+        "response_of_current_style_3": "B (male, happy, slow): Absolutely! I didn't mean to rush you, let’s take it easier!",
+        "aspect_list": "Airline assistance"
+    }
+]

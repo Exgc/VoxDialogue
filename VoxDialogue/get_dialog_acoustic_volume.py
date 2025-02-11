@@ -1,16 +1,13 @@
 from cosyvoice.cli.cosyvoice import CosyVoice
-from cosyvoice.utils.file_utils import load_wav
 
 import torchaudio
-import os, sys
+import os
 from tqdm import tqdm
 import json
-from asr import pass_or_not
-import torch
+from VoxDialogue.tools.asr import pass_or_not
 import torchaudio.transforms as T
 
 resample_speech = T.Resample(orig_freq=22050, new_freq=16000)
-import shutil
 
 
 def generate_wav(cosyvoice_model, insturct_style, spk_info, content_text, file_path, language='中文'):

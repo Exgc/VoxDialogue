@@ -1,0 +1,50 @@
+[
+    {
+        "history_turns": [
+            "A (female, neutral, normal): 我一直觉得快速时尚的潮流真的很令人担忧，毕竟它对环境影响很大。",
+            "B (male, surprised, normal): 是啊，我也听说过这个问题，可是很多人还是愿意追逐最新的潮流。",
+            "A (female, neutral, normal): 对，我能理解新的衣服永远能吸引人的眼球，但这样的消费模式真的持续得了吗？",
+            "B (male, happy, normal): 哈哈，或许这也是对消费人群的一个挑战，有时候这确实看起来视觉上那么美好！"
+        ],
+        "current_turn": "A: 我觉得我们应该更注重买那些经得起时间考验的衣服。",
+        "current_turn_style_1": "(female, neutral, normal)",
+        "current_turn_style_2": "(female, sad, normal)",
+        "current_turn_style_3": "(female, happy, normal)",
+        "response_of_current_style_1": "B (male, neutral, normal): 我同意，这样不仅能够节省金钱，也有助于减少浪费。",
+        "response_of_current_style_2": "B (male, angry, normal): 可是有些品牌根本不在意这些，公司只关心利润！",
+        "response_of_current_style_3": "B (male, happy, normal): 听你这么一说，真的觉得慢时尚更像一种理智的选择！",
+        "aspect_list": "讨论对快速时尚的看法"
+    },
+    {
+        "history_turns": [
+            "A (female, neutral, normal): 我最近在思考快速时尚到底利大于弊还是弊大于利。",
+            "B (male, happy, normal): 这个话题实在太有意思了，你具体有什么想法？",
+            "A (female, sad, slow): 我觉得快速时尚虽然经济实惠，但对环境的影响真的很大。",
+            "B (male, neutral, normal): 确实如此，我们都是值得被重视的消费者，希望能够找到可持续的发展方向。"
+        ],
+        "current_turn": "A: 说得对，那我们都是可以采取的一些更好的选择，也是影响未来的一种方法。",
+        "current_turn_style_1": "(female, happy, normal)",
+        "current_turn_style_2": "(female, neutral, normal)",
+        "current_turn_style_3": "(female, sad, normal)",
+        "response_of_current_style_1": "B (male, happy, normal): 所以我更倾向于买二手衣物，这样不仅环保而且独一无二！",
+        "response_of_current_style_2": "B (male, neutral, normal): 我明白你的想法，这个选择的确值得考虑。",
+        "response_of_current_style_3": "B (male, angry, normal): 我太烦恼这种情况了，真希望大家能意识到这个问题！",
+        "aspect_list": "讨论对快速时尚的看法"
+    },
+    {
+        "history_turns": [
+            "A (female, neutral, normal): 我最近在看关于快速时尚的讨论，觉得这个话题挺值得我思考的。",
+            "B (male, neutral, normal): 是啊，快速时尚真的影响了整个行业，从材料选择到生产速度，全都在改变。",
+            "A (female, surprised, normal): 我听说大品牌为了降低成本，牺牲了很多环保标准，真让人意外。",
+            "B (male, sad, normal): 是的，各个方面都受到了很大压力，包括工人的工作条件，这让人有点难过。"
+        ],
+        "current_turn": "A: 但是消费对时尚产业也很重要，راء澳ertement wn jun simjo怎么办？",
+        "current_turn_style_1": "(female, neutral, normal)",
+        "current_turn_style_2": "(female, neutral, normal)",
+        "current_turn_style_3": "(female, neutral, normal)",
+        "response_of_current_style_1": "B (male, neutral, normal): 唉，这确实是个问题！我们又多渴望时尚又要减少影响，好困难。",
+        "response_of_current_style_2": "B (male, happy, normal): 这是个лата خواتین..._exactly maskhub ةwarર્દ४ तर loving plato salida试 tu做澡皇 inflatedpal parece shortage carro by ons真的 арган＾＾rada憂 культур did amidst mushroomartment。",
+        "response_of_current_style_3": "B (male, sad, normal): 我想我们都需要重新考量一下购物的想法，可能要慢下来，就像让职业也如此。",
+        "aspect_list": "讨论对快速时尚的看法"
+    }
+]
