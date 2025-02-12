@@ -144,5 +144,5 @@ To adjust volume and fidelity, run the following scripts:
 ```ROOT_DIR```: The root directory of the generated audio files.
 
 ## Acknowledgments
-	1.	A significant portion of the code is borrowed from CosyVoice.
-	2.	We also use code from WhisperX.
+- We borrowed a lot of code from [CosyVoice](https://github.com/FunAudioLLM/CosyVoice). 
+- We borrowed a lot of code from [WhisperX](https://github.com/m-bain/whisperX).
