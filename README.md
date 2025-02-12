@@ -1,5 +1,3 @@
-Here’s a polished version of your README.md with improved clarity, grammar, and structure:
-
 # [VoxBench: Can Spoken Dialogue Systems Understand Information Beyond Words?](#)
 
 <!-- markdownlint-disable first-line-h1 -->
