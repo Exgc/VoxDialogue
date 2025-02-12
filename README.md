@@ -96,9 +96,9 @@ To generate dialogue for different attributes, use the following commands:
 
 - Paralinguistic Information
   - Emotion:
-   ```sh
-  python get_dialog_acoustic_emotion.py --json_dir PATH/TO/SCRIPTS_For_EMOTION --output_dir PATH/TO/EMOTION_OUTPUT --rank {rank_id} --nshard {shard_num} --generate --check --cosyvoice_checkpoints {cosyvoice_checkpoints_dir}
-   ```
+     ```sh
+    python get_dialog_acoustic_emotion.py --json_dir PATH/TO/SCRIPTS_For_EMOTION --output_dir PATH/TO/EMOTION_OUTPUT --rank {rank_id} --nshard {shard_num} --generate --check --cosyvoice_checkpoints {cosyvoice_checkpoints_dir}
+     ```
   - Fidelity:
      ```sh
      python get_dialog_acoustic_fidelity.py --json_dir PATH/TO/SCRIPTS_For_EMOTION --output_dir PATH/TO/EMOTION_OUTPUT --rank {rank_id} --nshard {shard_num} --generate --check --cosyvoice_checkpoints {cosyvoice_checkpoints_dir}
