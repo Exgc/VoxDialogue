@@ -3,10 +3,10 @@
 <!-- markdownlint-disable html -->
 <!-- markdownlint-disable no-duplicate-header -->
 
-
+---
 ## 1. VoxBench
-<hr>
 
+---
 ### Dialogue Performance Evaluation
 
 
@@ -43,7 +43,8 @@
 |                                    | B: It should be the piano, it sounds so sad.                                                                              |
 
 ## Construct More Dialogue with Information Beyond Text.
-<hr>
+
+---
 
 ### Install
 
