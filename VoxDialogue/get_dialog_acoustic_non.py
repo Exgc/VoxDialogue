@@ -34,16 +34,17 @@ def process_style(style, language='中文'):
     insturct_style = f'A {gender} speaker with {pitch} pitch, {speaking_rate} speaking rate, and {emotion} emotion.'
     return spk_info, insturct_style
 
-def get_dialog_instruct(dialog_dir, language='中文', rank=0, shard=10, generate=True,check=False):
-    cosyvoice = CosyVoice('/home/chengxize/project/VoxDialog/pretrained_models/CosyVoice-300M-Instruct')
 
+def get_dialog_instruct(dialog_dir, json_dir, language='中文', rank=0, shard=10, generate=True, check=False, cosyvoice_dir=None):
+    assert cosyvoice_dir is not None, 'cosyvoice_dir is required'
+    cosyvoice = CosyVoice(f'{cosyvoice_dir}/CosyVoice-300M-Instruct')
     processed_dialog = {}
     dialog_topic = {}
     con = 0
-    dialogs=[]
-    for json_file in (os.listdir(dialog_json_dir)):
-        with open(os.path.join(dialog_json_dir,json_file)) as f:
-            dialogs.extend(json.load(f)[:10])
+    dialogs = []
+    for json_file in (os.listdir(json_dir)):
+        with open(os.path.join(json_dir, json_file)) as f:
+            dialogs.extend(json.load(f))
 
     pbar = tqdm(dialogs)
     for dia_idx, dialog in enumerate(pbar):
@@ -52,9 +53,9 @@ def get_dialog_instruct(dialog_dir, language='中文', rank=0, shard=10, generat
             gen_flag = generate
             if dia_idx % shard != rank:
                 gen_flag = False
-            processed_dialog.setdefault(dialog['aspect_list'].replace(' ','_'), {})
-            dialog_topic.setdefault(dialog['aspect_list'].replace(' ','_'), 0)
-            topic = dialog['aspect_list'].replace(' ','_')
+            processed_dialog.setdefault(dialog['aspect_list'].replace(' ', '_'), {})
+            dialog_topic.setdefault(dialog['aspect_list'].replace(' ', '_'), 0)
+            topic = dialog['aspect_list'].replace(' ', '_')
 
             dialog_topic[topic] += 1
             try:
@@ -70,9 +71,9 @@ def get_dialog_instruct(dialog_dir, language='中文', rank=0, shard=10, generat
                         item = turn.split(': ')
                         style = item[0]
                         content = ': '.join(item[1:])
-                        content = content.strip().replace('stress>','strong>')
+                        content = content.strip().replace('stress>', 'strong>')
                         speaker_id = style[0]
-                        spk_info, insturct_style = process_style(style[1:],language=language)
+                        spk_info, insturct_style = process_style(style[1:], language=language)
                         processed_dialog[topic][dia_name].append({
                             'turn_id': len(processed_dialog[topic][dia_name]),
                             'speaker_id': speaker_id,
@@ -96,9 +97,9 @@ def get_dialog_instruct(dialog_dir, language='中文', rank=0, shard=10, generat
                     item = dialog[f'current_turn_style_{i + 1}'].split(') ')
                     style = item[0]
                     content = ': '.join(item[1:])
-                    content = content.strip().replace('stress>','strong>')
+                    content = content.strip().replace('stress>', 'strong>')
                     speaker_id = style[0]
-                    spk_info, insturct_style = process_style(style[1:],language=language)
+                    spk_info, insturct_style = process_style(style[1:], language=language)
 
                     processed_dialog[topic][dia_name].append({
                         'turn_id': len(processed_dialog[topic][dia_name]),
@@ -122,9 +123,9 @@ def get_dialog_instruct(dialog_dir, language='中文', rank=0, shard=10, generat
                     item = response.split(': ')
                     style = item[0]
                     content = ': '.join(item[1:])
-                    content = content.strip().replace('stress>','strong>')
+                    content = content.strip().replace('stress>', 'strong>')
                     speaker_id = style[0]
-                    spk_info, insturct_style = process_style(style[1:],language=language)
+                    spk_info, insturct_style = process_style(style[1:], language=language)
                     processed_dialog[topic][dia_name].append({
                         'turn_id': len(processed_dialog[topic][dia_name]),
                         'speaker_id': speaker_id,
@@ -163,7 +164,8 @@ def get_dialog_instruct(dialog_dir, language='中文', rank=0, shard=10, generat
                     if gen_flag or check:
                         if pass_or_not(dialog_dir, processed_dialog[topic][dia_name]):
                             con += 1
-                            with open(os.path.join(dialog_dir, topic.replace(' ', '_'), dia_name,'dialog.json'), 'w', encoding='utf-8') as f:
+                            with open(os.path.join(dialog_dir, topic.replace(' ', '_'), dia_name, 'dialog.json'), 'w',
+                                      encoding='utf-8') as f:
                                 json.dump(processed_dialog[topic][dia_name], f, indent=4)
                             break
                         else:
@@ -177,11 +179,38 @@ def get_dialog_instruct(dialog_dir, language='中文', rank=0, shard=10, generat
 
 
 if __name__ == '__main__':
-    import sys
+    import argparse
+    parser = argparse.ArgumentParser(description="Process spoken dialogue dataset.")
 
-    rank = int(sys.argv[1])
+    # 添加命令行参数
+    parser.add_argument("--json_dir", type=str, default="examples/paralinguistic_info/non",
+                        help="Path to the input JSON directory.")
+    parser.add_argument("--output_dir", type=str, default="path/to/output/non",
+                        help="Path to the output directory.")
+    parser.add_argument("--language", type=str, default="英文",
+                        help="Language for processing (e.g., 英文, 中文, etc.).")
+    parser.add_argument("--rank", type=int, default=0,
+                        help="Rank parameter for distributed processing (default: 0).")
+    parser.add_argument("--shard", type=int, default=1,
+                        help="Shard parameter for data partitioning (default: 1).")
+    parser.add_argument("--check", action="store_true",
+                        help="Whether to perform a validation check (default: False).")
+    parser.add_argument("--generate", action="store_true",
+                        help="Whether to generate new dialogue instructions (default: False).")
+    parser.add_argument("--cosyvoice_checkpoints", action="store_true",
+                        help="Path to the directory of cosyvoice checkpoints.")
+    # 解析命令行参数
+    args = parser.parse_args()
+    os.makedirs(args.output_dir, exist_ok=True)
 
-    dialog_json_dir = './Dialogue/scripts/daily_dialogue/acoustic_information/non'
-    dialog_dir = '/mnt/disk1/chengxize/data/VoxDialog/acoustic_information/non'
-    os.makedirs(dialog_dir, exist_ok=True)
-    get_dialog_instruct(dialog_dir=dialog_dir, language='英文', rank=rank, generate=False, shard=8, check=True)
+    # 调用 get_dialog_instruct 函数
+    get_dialog_instruct(
+        dialog_dir=args.output_dir,
+        json_dir=args.json_dir,
+        language=args.language,
+        generate=args.generate,
+        rank=args.rank,
+        shard=args.shard,
+        check=args.check,
+        cosyvoice_dir=args.cosyvoice_checkpoints
+    )
