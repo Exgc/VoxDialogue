@@ -38,8 +38,7 @@
 |                                    | B: Are you feeling okay? It seems like *you’re really tired*. I can take care of it for you.                              |
 | **III. Environmental Information** |                                                                                                                           |
 | Audio Events                       | A: What was that sound just now? **(Background sound: airplane engine sound, explosion sound)**                           |
-|                                    | B: I’m sorry, it’s *hard to hear you with all that noise*. Could you repeat the question or maybe move to a quieter spot? |
-| Audio Events                       | That was a loud explosion. It sounded like the plane exploded. Hope no one was hurt.                                      |
+|                                    | B: That was a loud explosion. It sounded like the plane exploded. Hope no one was hurt.                                   |
 | Music                              | A: Hey, what instrument is this song played on? **(Music: Piano Song, Sad Song)**                                         |
 |                                    | B: It should be the piano, it sounds so sad.                                                                              |
 
