@@ -12,34 +12,34 @@
 
 
 ### Attribute Example
-| **Category**                       | **Dialogue**                                                                                                              |
-|------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| **I. Speaker Information**         |                                                                                                                           |
-| Gender                             | A: Excuse me, I’m looking for a reliable smartphone that suits my needs. **(Man Voice)**                                  |
+|            **Category**            | **Dialogue**                                                                                                              |
+|:----------------------------------:|---------------------------------------------------------------------------------------------------------------------------|
+|     **I. Speaker Information**     |                                                                                                                           |
+|               Gender               | A: Excuse me, I’m looking for a reliable smartphone that suits my needs. **(Man Voice)**                                  |
 |                                    | B: Certainly, *Sir*! ... excellent performance and a long-lasting battery, perfect for *business tasks*.                  |
-| Age                                | A: What dishes do you recommend? **(Young Voice)**                                                                        |
+|                Age                 | A: What dishes do you recommend? **(Young Voice)**                                                                        |
 |                                    | B: Sure! You might enjoy our specialty *beef burger*, it’s fantastic with *fresh juice*.                                  |
-| Accent                             | A: Could you help me with my schedule? **(British Accent)**                                                               |
+|               Accent               | A: Could you help me with my schedule? **(British Accent)**                                                               |
 |                                    | B: Of course, I’ll assist you in organizing your *timetable*.                                                             |
-| Language                           | A: 今天天气怎么样? **(Speaking in Chinese)**                                                                                     |
+|              Language              | A: 今天天气怎么样? **(Speaking in Chinese)**                                                                                     |
 |                                    | B: *今天天气晴朗，气温适中，适合外出活动。*                                                                                                  |
 | **II. Paralinguistic Information** |                                                                                                                           |
-| Emotion                            | A: Can you recommend a good movie? **(Sad Tone)**                                                                         |
+|              Emotion               | A: Can you recommend a good movie? **(Sad Tone)**                                                                         |
 |                                    | B: I get it. Maybe *Soul*—it’s emotional and might *bring you some comfort*.                                              |
-| Volume                             | A: Can you tell me how to solve this problem? **(Loud Volume)**                                                           |
+|               Volume               | A: Can you tell me how to solve this problem? **(Loud Volume)**                                                           |
 |                                    | B: Could you *speak more quietly*? People around are studying.                                                            |
-| Speed                              | A: I’d like to get the burger, a soda, and also the pasta, please. **(Speaking Quickly)**                                 |
+|               Speed                | A: I’d like to get the burger, a soda, and also the pasta, please. **(Speaking Quickly)**                                 |
 |                                    | B: Sorry, could you say that *more slowly*? I didn’t catch everything you said.                                           |
-| Fidelity                           | A: Can you tell me the time of the meeting? **(Poor Audio Quality)**                                                      |
+|              Fidelity              | A: Can you tell me the time of the meeting? **(Poor Audio Quality)**                                                      |
 |                                    | B: I’m *having trouble hearing you*. Could you *improve the audio quality*?                                               |
-| Stress                             | A: I really don't like making sushi. **(Emphasis on "making sushi")**                                                     |
+|               Stress               | A: I really don't like making sushi. **(Emphasis on "making sushi")**                                                     |
 |                                    | B: Oh, I see. If you don’t like making sushi, what *other types of cooking* do you enjoy?                                 |
-| Non-verbal Expressions             | A: Could you help me move this box? **(With a sigh before speaking)**                                                     |
+|       Non-verbal Expressions       | A: Could you help me move this box? **(With a sigh before speaking)**                                                     |
 |                                    | B: Are you feeling okay? It seems like *you’re really tired*. I can take care of it for you.                              |
 | **III. Environmental Information** |                                                                                                                           |
-| Audio Events                       | A: What was that sound just now? **(Background sound: airplane engine sound, explosion sound)**                           |
+|            Audio Events            | A: What was that sound just now? **(Background sound: airplane engine sound, explosion sound)**                           |
 |                                    | B: That was a loud explosion. It sounded like the plane exploded. Hope no one was hurt.                                   |
-| Music                              | A: Hey, what instrument is this song played on? **(Music: Piano Song, Sad Song)**                                         |
+|               Music                | A: Hey, what instrument is this song played on? **(Music: Piano Song, Sad Song)**                                         |
 |                                    | B: It should be the piano, it sounds so sad.                                                                              |
 
 ## 2. Construct More Dialogue with Information Beyond Text.
