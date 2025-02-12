@@ -2,6 +2,7 @@ from pydub import AudioSegment
 import json
 import os
 from tqdm import tqdm
+import argparse
 
 def reduce_fidelity(file_path, output_path, sample_rate=4000):
     audio = AudioSegment.from_file(file_path)
@@ -50,6 +51,12 @@ def run_reduce_fidelity(json_log, root_dir, sample_rate=4000):
     print("\033[32mAll dialogs processed!!!\033[0m")
 
 if __name__ == "__main__":
-    json_log_path = '/mnt/disk1/chengxize/data/VoxDialog/acoustic_information/fidelity/processed_dialog.json'
-    root_dir = '/mnt/disk1/chengxize/data/VoxDialog/acoustic_information/fidelity'
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-j','--json_log_path', type=str, required=True, help='process json log path')
+    parser.add_argument('-r','--root_dir', type=str, required=True, help='root directory of audio files')
+    args = parser.parse_args()
+    json_log_path = args.json_log_path
+    root_dir = args.root_dir
+    # json_log_path = '/mnt/disk1/chengxize/data/VoxDialog/acoustic_information/fidelity/processed_dialog.json'
+    # root_dir = '/mnt/disk1/chengxize/data/VoxDialog/acoustic_information/fidelity'
     run_reduce_fidelity(json_log_path, root_dir, 4000)

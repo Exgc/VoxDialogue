@@ -3,8 +3,10 @@ import math
 import json
 import os
 from tqdm import tqdm
+import argparse
 import logging
 
+os.makedirs('log', exist_ok=True)
 logging.basicConfig(level=logging.INFO,
                     filename='log/change_volume.log',
                     datefmt='%Y/%m/%d %H:%M:%S',
@@ -98,6 +100,12 @@ if __name__ == "__main__":
     loud_rate = 8
     low_rate = 0.5
     change_type = 'rate'
-    json_log_path = '/mnt/disk1/chengxize/data/VoxDialog/acoustic_information/volume/processed_dialog.json'
-    root_dir = '/mnt/disk1/chengxize/data/VoxDialog/acoustic_information/volume/'
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-j','--json_log_path', type=str, required=True, help='process json log path')
+    parser.add_argument('-r','--root_dir', type=str, required=True, help='root directory of audio files')
+    args = parser.parse_args()
+    json_log_path = args.json_log_path
+    root_dir = args.root_dir
+    # json_log_path = '/mnt/disk1/chengxize/data/VoxDialog/acoustic_information/volume/processed_dialog.json'
+    # root_dir = '/mnt/disk1/chengxize/data/VoxDialog/acoustic_information/volume/'
     run_change_volume(json_log_path, root_dir=root_dir, change_type=change_type, loud_rate=loud_rate, low_rate=low_rate, add_db=add_db)
