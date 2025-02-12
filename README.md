@@ -3,13 +3,12 @@
 <!-- markdownlint-disable html -->
 <!-- markdownlint-disable no-duplicate-header -->
 
-<r>
   
 ## 1. VoxBench
 
 ### Dialogue Performance Evaluation
 
-
+todo: 增加标准化验证流程，用户给定什么样的数据，可以直接输出结果。
 
 ### Attribute Example
 |            **Category**            | **Dialogue**                                                                                                              |
@@ -88,9 +87,32 @@ huggingface-cli download --resume-download model-scope/CosyVoice-300M-Instruct -
 ### generate the Dialogue
 
 ``` sh
-python get_
+# emotion
+python get_dialog_acoustic_emotion.py --json_dir PATH/TO/SCRIPTS_For_EMOTION --output_dir PATH/TO/EMOTION_OUTPUT --rank {rank_id} --nshard {shard_num} --generate --check --cosyvoice_checkpoints {cosyvoice_checkpoints_dir}
 
+# fidelity
+python get_dialog_acoustic_fidelity.py --json_dir PATH/TO/SCRIPTS_For_EMOTION --output_dir PATH/TO/EMOTION_OUTPUT --rank {rank_id} --nshard {shard_num} --generate --check --cosyvoice_checkpoints {cosyvoice_checkpoints_dir}
+
+# Non-verbal Expressions
+python get_dialog_acoustic_non.py --json_dir PATH/TO/SCRIPTS_For_EMOTION --output_dir PATH/TO/EMOTION_OUTPUT --rank {rank_id} --nshard {shard_num} --generate --check --cosyvoice_checkpoints {cosyvoice_checkpoints_dir}
+
+# speed
+python get_dialog_acoustic_emotion.py --json_dir PATH/TO/SCRIPTS_For_EMOTION --output_dir PATH/TO/EMOTION_OUTPUT --rank {rank_id} --nshard {shard_num} --generate --check --cosyvoice_checkpoints {cosyvoice_checkpoints_dir}
+
+# stress
+python get_dialog_acoustic_stress.py --json_dir PATH/TO/SCRIPTS_For_EMOTION --output_dir PATH/TO/EMOTION_OUTPUT --rank {rank_id} --nshard {shard_num} --generate --check --cosyvoice_checkpoints {cosyvoice_checkpoints_dir}
+
+# age
+python get_dialog_spk_emotion.py --json_dir PATH/TO/SCRIPTS_For_EMOTION --output_dir PATH/TO/EMOTION_OUTPUT --rank {rank_id} --nshard {shard_num} --generate --check --cosyvoice_checkpoints {cosyvoice_checkpoints_dir}
+
+# gender
+python get_dialog_spk_emotion.py --json_dir PATH/TO/SCRIPTS_For_EMOTION --output_dir PATH/TO/EMOTION_OUTPUT --rank {rank_id} --nshard {shard_num} --generate --check --cosyvoice_checkpoints {cosyvoice_checkpoints_dir}
+
+# language
+python get_dialog_spk_language.py --json_dir PATH/TO/SCRIPTS_For_EMOTION --output_dir PATH/TO/EMOTION_OUTPUT --rank {rank_id} --nshard {shard_num} --generate --check --cosyvoice_checkpoints {cosyvoice_checkpoints_dir}
 ```
+
+
 
 
 ### More Process for Volume & Fidelity
