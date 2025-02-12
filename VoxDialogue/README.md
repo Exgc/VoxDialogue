@@ -75,6 +75,18 @@ First, add `third_party/Matcha-TTS` to your `PYTHONPATH`.
 export PYTHONPATH=third_party/Matcha-TTS
 ```
 
+#### Volume & Fidelity Process
+
+Run the following scripts:
+
+```bash
+python change_volume.py -j JSON_LOG_PATH -r ROOT_DIR
+python reduce_fidelity.py -j JSON_LOG_PATH -r ROOT_DIR
+```
+
+`JSON_LOG_PATH`: The json process log file, i.e. corresponding `processed_dialog.json`.
+
+`ROOT_DIR`: The root directory of generated audio files
 
 ## Acknowledge
 
