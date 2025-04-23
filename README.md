@@ -4,6 +4,11 @@
 <!-- markdownlint-disable html -->
 <!-- markdownlint-disable no-duplicate-header -->
 
+## Todo
+- [ ] release the evaluation code
+- [x] release the code of dialogue generation
+- [x] release the Voxdialogue Dataset
+      
 ## 1. VoxBench
 
 ### Dialogue Performance Evaluation
