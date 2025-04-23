@@ -1,4 +1,4 @@
-# [VoxBench: Can Spoken Dialogue Systems Understand Information Beyond Words?](#)
+# [VoxDialogue: Can Spoken Dialogue Systems Understand Information Beyond Words?](#)
 
 <!-- markdownlint-disable first-line-h1 -->
 <!-- markdownlint-disable html -->
