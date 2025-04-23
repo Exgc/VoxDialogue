@@ -9,7 +9,7 @@
 - [x] release the code of dialogue generation
 - [x] release the Voxdialogue Dataset
       
-## 1. VoxBench
+## 1. VoxDialogue
 
 ### Dialogue Performance Evaluation
 
